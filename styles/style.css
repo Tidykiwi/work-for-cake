@@ -1,0 +1,131 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    user-select: none;   
+}
+    
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 5% 5% 10% 5%;
+    background-image: url("../images/web-development.jpg");
+    background-size: cover;
+    margin: 0;
+    width: 100vw;
+    height: 100vh;
+}
+
+main {
+    background-color: #e0fbfc;
+    padding: 10px 3vw 5vh 3vw;
+    border: solid 10px #253237;
+    border-radius: 15px;
+    background-color: #5c6b73;
+    opacity: 0.95;
+}
+
+h1 {
+    color: #353535;
+}
+
+#home-content {
+    background-color: #e0fbfc;
+    border-radius: 15px;
+    border: solid 10px #9db4c0;
+}
+
+.container-intro-grid {
+    padding: 2.5% 2.5% 2.5% 2.5%;
+    display: grid;
+    grid-template-columns: auto auto;
+    column-gap: 50px;
+}
+
+.container-intro-grid p {
+    color: #5c6b73;
+    text-align: center;
+    padding: 1rem 0 1rem 0;
+}
+
+#intro-grid-item-1 {
+    grid-column: 1 / span 1;
+    border-radius: 10px;
+    background-color: #c2dfe3;
+}
+
+#intro-grid-item-2 {
+    grid-column: 2 / span 1;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #9db4c0;
+    padding: 5% 5% 2.5% 5%;
+}
+
+.palette-div {
+    background-color: #fff;
+    border-radius: 7.5px;
+    margin: 0.5rem 0 0.5rem 0;
+}
+
+.palette-spread {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    height: 100px;
+    width: 90%;
+    padding: 0.5rem 0 0.5rem 0;
+}
+
+#container-open-modal {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+#container-projects {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+#trents-button {
+    background-color: cadetblue;
+    border: solid 1px blueviolet;
+    border-radius: 5px;
+}
+
+.card {
+    width: 200px;
+    padding: 10px 0 15px 0;
+    border-radius: 5px;
+    border: none;
+    background-color: #c2dfe3;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+}
+
+#evil-button {
+    position: absolute;
+    transform: translate(-50%, -50%);
+    white-space: nowrap;
+    width: 200px;
+    border-radius: 5px;
+    border: none;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);}
+
+#money-icon {
+    max-width: 90%;
+}
+
+#heart-icon {
+    max-width: 90%;
+}
+
+#sick-emoji-icon {
+    max-width: 90%;
+}
+
+.test-image {
+    width: 250px;
+}

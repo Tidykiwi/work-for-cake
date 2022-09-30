@@ -19,32 +19,70 @@
     <link rel="icon" href="/favicon.svg" type="image/svg+xml">
     <link rel="apple-touch-icon" href="/apple-touch-icon.png">
 
-    <link rel="stylesheet" href="style.css">
-    <script src="app.js" charset="utf-8"></script>
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="styles/modal.css">
+
+    <script defer src="scripts/home-modal.js" charset="utf-8"></script>
+    <script defer src="scripts/change-palette.js" charset="utf-8"></script>
 </head>
 <body>
-    <main>
-        <section id="container-intro">
-            <h1>Work for Cake</h1>
-            <p>Hello, my name is Ross.</p> 
-            <p>I am a hands-on creator and solution-seeker who has transitioned from an empowering
-                career in the French military to the exciting vastness of web and software development.</p> 
-            <p>I have an interest 
-                in both the front and the back end and, as such, I am able to help my clients to achieve a wide variety of outcomes.</p>
-            <p>If you wish to get a better understanding of my experiecne and ability, then I invite you to browse this site and the selection 
-                of client and other projects that it contains.</p>
-        </section>
-        <section id="container-projects">
-            <div>
-                <h2><a href="client.html">Client Projects</a></h2>
-            </div>
-            <div>
-                <h2><a href="other.html">Other Projects</a></h2>
-            </div>
-            <div>
-                <h2>Project Folder 3</h2>
-            </div>
-        </section>
+    <main id="main">
+        <div id="home-content">
+            <section class="container-intro-grid">
+                <div id="intro-grid-item-1">
+                    <div>
+                        <h1 id="test-h1">WORK FOR CAKE</h1>
+                        <p>Hello, my name is Ross.</p> 
+                        <p>I am a hands-on creator and solution-seeker exploring the exciting vastness of web and software development.</p> 
+                        <p>I have an interest in both the front and the back end. As such, I am able to help my clients
+                        to achieve a wide variety of outcomes.</p>
+                        <p>If you wish to see some of my work, then I invite you to browse this site and the selection 
+                        of client and other projects that it contains.</p>
+                    </div>
+                    <!-- Open the Modal -->
+                    <div id="container-open-modal">
+                        <button id="modal-button">EXPLORE</button>
+                    </div>
+                </div>
+                <div id="intro-grid-item-2">
+                    <h3>PALETTE SELECTOR</h3>
+                    <div class="palette-div">
+                        <img class="palette-spread" id="palette-1" src="images/palette-1.jpg">
+                    </div>
+                    <div class="palette-div">
+                        <img class="palette-spread" id="palette-2" onclick="changePaletteTwo()" src="images/palette-2.jpg">
+                    </div>
+                    <div class="palette-div">
+                        <img class="palette-spread" id="palette-3" onclick="changePaletteThree()" src="images/palette-3.jpg">
+                    </div>
+                </div>
+                
+            </section>
+
+            
+        
+            <!-- The Modal -->
+            <section id="container-modal" class="modal">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <span class="close-modal">&times;</span>
+                    </div>
+                    <div class="modal-body">
+                        <section id="container-projects">
+                            <div>
+                                <button class="card" id="project-card"><img id="money-icon" src="images/cash-money-icon.png"><h2><a href="client.html">Client Projects</a></h2></button>
+                            </div>
+                            <div>
+                                <button class="card" id="project-card"><img id="heart-icon" src="images/heart-icon.png"><h2><a href="interest.html">Interest Projects</a></h2></button>
+                            </div>
+                            <div>
+                                <button class="card" id="project-card"><img id="sick-emoji-icon" src="images/kiwi-icon.jpg"><h2><a href="about.html">About Me</a></h2></button>
+                            </div>
+                        </section>
+                    </div>
+                </div>
+            </section>
+        </div>
 
     </main>
 </body>
