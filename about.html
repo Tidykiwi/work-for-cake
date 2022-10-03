@@ -20,25 +20,59 @@
         <link rel="apple-touch-icon" href="/apple-touch-icon.png">
     
         <link rel="stylesheet" href="styles/style.css">
-        <script src="app.js" charset="utf-8"></script>
+        <link rel="stylesheet" href="styles/modal.css">
+
+        <script defer src="scripts/nav-modal.js" charset="utf-8"></script>
     </head>
 <body>
-    <main>
-        <h1>Testimonials</h1>
-        <img class="test-image" src="images/alice.jpg">
-        <h3>Alice says...</h3>
-        <p>Gosh! What a really great developer Ross is. Such good work... and so professional and polite!</p>
-        <img class="test-image" src="images/bob.jpg">
-        <h3>Bob says...</h3>
-        <p>I was in the quite the pickle until Ross helped me out. I don't know where I would be without him!</p>
-        <img class="test-image"src="images/claire.jpg">
-        <h3>Claire says...</h3>
-        <p>I'll definitely call Ross again if I ever need any more web or software development help!</p>
+    <main id="main">
+        <div class="content-container">
+            <h1>Testimonials</h1>
+            <img class="test-image" src="images/alice.jpg">
+            <h3>Alice says...</h3>
+            <p>Gosh! What a really great developer Ross is. Such good work... and so professional and polite!</p>
+            <img class="test-image" src="images/bob.jpg">
+            <h3>Bob says...</h3>
+            <p>I was in the quite the pickle until Ross helped me out. I don't know where I would be without him!</p>
+            <img class="test-image"src="images/claire.jpg">
+            <h3>Claire says...</h3>
+            <p>I'll definitely call Ross again if I ever need any more web or software development help!</p>
 
-        <button id="client-button"><a href="client.html">Go to Client Projects</a></button>
-        <button id="interest-button"><a href="interest.html">Go to Interest Projects</a></button>
-        <button id="home-button"><a href="index.html">Go Home</a></button>
+            <!-- <a href="interest.html"><button class="button" id="interest-button">Interest Projects</button></a>
+            <a href="about.html"><button class="button" id="about-button">About Me</button></a>
+            <a href="index.html"><button class="button" id="home-button">Home</button></a> -->
 
+            <!-- Open the Modal -->
+            <div id="nav-container"> <!-- class = nav???? -->
+                <button class="button" id="modal-button">Explore</button>
+                <a href="index.html"><button class="button" id="home-button">Home</button></a>
+            </div>
+
+            <!-- The Modal -->
+            <section id="container-modal" class="modal">
+                <div class="modal-content" id="modal-content">
+                    <div class="modal-header">
+                        <span class="close-modal">&times;</span>
+                    </div>
+                    <div class="modal-body">
+                        <section id="container-projects">
+                            <div class="card-container">
+                                <button class="card" id="project-card"><img id="money-icon" src="images/cash-money-icon.png"><h2><a href="client.html">Client Projects</a></h2></button>
+                            </div>
+                            <div class="card-container">
+                                <button class="card" id="project-card"><img id="heart-icon" src="images/heart-icon.png"><h2><a href="interest.html">Interest Projects</a></h2></button>
+                            </div>
+                            <div class="card-container">
+                                <button class="card" id="project-card"><img id="sick-emoji-icon" src="images/kiwi-icon.jpg"><h2><a href="about.html">About Me</a></h2></button>
+                            </div>
+                            <div class="card-container">
+                                <button class="card" id="project-card"><img id="home-icon" src="images/home-icon.png"><h2><a href="index.html">Home</a></h2></button>
+                            </div>
+                        </section>
+                    </div>
+                </div>
+            </section>
+        </div>
     </main>
 </body>
 </html>

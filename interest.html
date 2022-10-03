@@ -20,34 +20,107 @@
         <link rel="apple-touch-icon" href="/apple-touch-icon.png">
     
         <link rel="stylesheet" href="styles/style.css">
-        <script src="app.js" charset="utf-8"></script>
+        <link rel="stylesheet" href="styles/modal.css">
+        <script defer src="scripts/nav-modal.js" charset="utf-8"></script>
         <script defer src="scripts/evil-btn.js" charset="utf-8"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.js"></script>
     </head>
 <body>
-    <main>
-        <h1>Here are some other projects</h1>
-        <h3>This Project</h3>
-        <p>This projecty showcases an <strong>API</strong></p>
-        <button id="other-button"><a href="index.html" target="_blank" >Check this out - Other Project</a></button>
-        <h3>That Project</h3>
-        <p>This project showcases a <strong>CHATBOT</strong></p>
-        <button id="other-button"><a href="index.html" target="_blank" >Check this out - Other Project</a></button>
-        <h3>Another Project</h3>
-        <p>This project showcases a <strong>REACT APP</strong></p>
-        <button id="other-button"><a href="index.html" target="_blank" >Check this out - Other Project</a></button>
-        <h3>Yet Another Project</h3>
-        <p>This project showcases a <strong>BLOCKCHAIN</strong></p>
-        <button id="other-button"><a href="index.html" target="_blank" >Check this out - Other Project</a></button>
-        <h3>And Yet Another Project</h3>
-        <p>This project showcases a <strong>VPN</strong></p>
-        <button id="other-button"><a href="index.html" target="_blank" >Check this out - Other Project</a></button>
-        <button id="home-button"><a href="client.html">Go to Client Projects</a></button>
-        <button id="home-button"><a href="about.html">Go to Personal Details</a></button>
-        <button id="home-button"><a href="index.html">Go Home</a></button>
-        <div>
+    <main id="main">
+        <div class="content-container">
+            <h1>Here are some showcase projects</h1>
+            <div id="interest-content">
+                <div class="card-container">
+                    <div class="card">
+                        <h3>This Project</h3>
+                        <p>This projecty showcases an <strong>API</strong></p>
+                        <a href="index.html" target="_blank" ><button class="button" id="other-button">Check this out</button></a>
+                    </div>
+                </div>
+                <div class="card-container">
+                    <div class="card">
+                        <h3>That Project</h3>
+                        <p>This project showcases a <strong>CHATBOT</strong></p>
+                        <a href="index.html" target="_blank" ><button class="button" id="other-button">Check this out</button></a>
+                    </div>
+                </div>
+                <div class="card-container">
+                    <div class="card">
+                        <h3>Another Project</h3>
+                        <p>This project showcases a <strong>REACT APP</strong></p>
+                        <a href="index.html" target="_blank" ><button class="button" id="other-button">Check this out</button></a>
+                    </div>
+                </div>
+                <div class="card-container">
+                    <div class="card">
+                        <h3>Yet Another Project</h3>
+                        <p>This project showcases a <strong>A SECURE BOOKING SYSTEM</strong></p>
+                        <a href="index.html" target="_blank" ><button class="button" id="other-button">Check this out</button></a>                
+                    </div>
+                </div>
+                <div class="card-container">
+                    <div class="card">
+                        <h3>And Yet Another Project</h3>
+                        <p>This project showcases a <strong>A SECURE PAYMENT SYSTEM</strong></p>
+                        <a href="index.html" target="_blank" ><button class="button" id="other-button">Check this out</button></a>
+                    </div>
+                </div>
+                <div class="card-container">
+                    <div class="card">
+                        <h3>And One More Project</h3>
+                        <p>This project showcases a <strong>BLOCKCHAIN</strong></p>
+                        <a href="index.html" target="_blank" ><button class="button" id="other-button">Check this out</button></a>
+                    </div>
+                </div>
+                <div class="card-container">
+                    <div class="card">
+                        <h3>And One For The Road</h3>
+                        <p>This project showcases a <strong>VPN</strong></p>
+                        <a href="index.html" target="_blank" ><button class="button" id="other-button">Check this out</button></a>
+                    </div>
+                </div>
+            </div>
+            
+            
+            <!-- <a href="interest.html"><button class="button" id="interest-button">Interest Projects</button></a>
+            <a href="about.html"><button class="button" id="about-button">About Me</button></a>
+            <a href="index.html"><button class="button" id="home-button">Home</button></a> -->
+
+            <!-- Open the Modal -->
+            <div id="nav-container"> <!-- class = nav???? -->
+                <button class="button" id="modal-button">Explore</button>
+                <a href="index.html"><button class="button" id="home-button">Home</button></a>
+            </div>
+            <div>
             <button class="project-card" id="evil-button"><img id="sick-emoji-icon" src="images/sick-emoji.png"><h2><a href="https://www.goodhousekeeping.com/life/parenting/a36279135/best-corny-dad-jokes-for-kids/" target="_blank">Broken Projects</a></h2></button>
+            </div>
+
+            <!-- The Modal -->
+            <section id="container-modal" class="modal">
+                <div class="modal-content" id="modal-content">
+                    <div class="modal-header">
+                        <span class="close-modal">&times;</span>
+                    </div>
+                    <div class="modal-body">
+                        <section id="container-projects">
+                            <div class="card-container">
+                                <button class="card" id="project-card"><img id="money-icon" src="images/cash-money-icon.png"><h2><a href="client.html">Client Projects</a></h2></button>
+                            </div>
+                            <div class="card-container">
+                                <button class="card" id="project-card"><img id="heart-icon" src="images/heart-icon.png"><h2><a href="interest.html">Interest Projects</a></h2></button>
+                            </div>
+                            <div class="card-container">
+                                <button class="card" id="project-card"><img id="sick-emoji-icon" src="images/kiwi-icon.jpg"><h2><a href="about.html">About Me</a></h2></button>
+                            </div>
+                            <div class="card-container">
+                                <button class="card" id="project-card"><img id="home-icon" src="images/home-icon.png"><h2><a href="index.html">Home</a></h2></button>
+                            </div>
+                        </section>
+                    </div>
+                </div>
+            </section>
         </div>
+        
     </main>
 </body>
 </html>

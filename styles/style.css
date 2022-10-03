@@ -16,44 +16,55 @@ body {
 }
 
 main {
-    background-color: #e0fbfc;
     padding: 10px 3vw 5vh 3vw;
     border: solid 10px #253237;
     border-radius: 15px;
     background-color: #5c6b73;
-    opacity: 0.95;
+    opacity: 1;
 }
+
+.button {
+    padding: 1rem 1rem 1rem 1rem;
+    border: solid 1px #353535;
+    border-radius: 5px;
+    font-size: medium;
+    font-weight: bold;
+    letter-spacing: 2px;
+    color:#e0fbfc;
+    background-color:#5c6b73;
+  }
 
 h1 {
     color: #353535;
 }
 
-#home-content {
+.content-container {
     background-color: #e0fbfc;
     border-radius: 15px;
     border: solid 10px #9db4c0;
+    padding: 2rem 2rem 2rem 2rem;
 }
 
-.container-intro-grid {
+.container-intro-flex {
     padding: 2.5% 2.5% 2.5% 2.5%;
     display: grid;
     grid-template-columns: auto auto;
     column-gap: 50px;
 }
 
-.container-intro-grid p {
+.container-intro-flex p {
     color: #5c6b73;
     text-align: center;
     padding: 1rem 0 1rem 0;
 }
 
-#intro-grid-item-1 {
+#intro-flex-item-1 {
     grid-column: 1 / span 1;
     border-radius: 10px;
     background-color: #c2dfe3;
 }
 
-#intro-grid-item-2 {
+#intro-flex-item-2 {
     grid-column: 2 / span 1;
     border-radius: 10px;
     display: flex;
@@ -78,22 +89,26 @@ h1 {
     padding: 0.5rem 0 0.5rem 0;
 }
 
-#container-open-modal {
+#nav-container {
     display: flex;
     flex-direction: row;
     justify-content: center;
+    gap: 25px;
+}
+
+#client-content,
+#interest-content {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
 }
 
 #container-projects {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
-}
-
-#trents-button {
-    background-color: cadetblue;
-    border: solid 1px blueviolet;
-    border-radius: 5px;
+    flex-wrap: wrap;
 }
 
 .card {
@@ -128,4 +143,8 @@ h1 {
 
 .test-image {
     width: 250px;
+}
+
+#home-icon {
+    max-width: 90%;
 }

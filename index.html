@@ -22,29 +22,27 @@
     <link rel="stylesheet" href="styles/style.css">
     <link rel="stylesheet" href="styles/modal.css">
 
-    <script defer src="scripts/home-modal.js" charset="utf-8"></script>
+    <script defer src="scripts/nav-modal.js" charset="utf-8"></script>
     <script defer src="scripts/change-palette.js" charset="utf-8"></script>
 </head>
 <body>
     <main id="main">
-        <div id="home-content">
-            <section class="container-intro-grid">
-                <div id="intro-grid-item-1">
-                    <div>
-                        <h1 id="test-h1">WORK FOR CAKE</h1>
+        <div class="content-container">
+            <section class="container-intro-flex">
+                <div id="intro-flex-item-1">
+                    <div id="welcome-text">
                         <p>Hello, my name is Ross.</p> 
-                        <p>I am a hands-on creator and solution-seeker exploring the exciting vastness of web and software development.</p> 
-                        <p>I have an interest in both the front and the back end. As such, I am able to help my clients
-                        to achieve a wide variety of outcomes.</p>
-                        <p>If you wish to see some of my work, then I invite you to browse this site and the selection 
-                        of client and other projects that it contains.</p>
+                        <p>I am a hands-on creator and solution-seeker disguised as a full-stack web developer.</p> 
+                        <p>I invite you to browse this site and the selection of client and other projects that it contains.</p>
+                        <p>This site is being built using HTML, SASS, & TYPESCRIPT</p>
                     </div>
                     <!-- Open the Modal -->
-                    <div id="container-open-modal">
-                        <button id="modal-button">EXPLORE</button>
+                    <div id="nav-container">
+                        <button class="button" id="modal-button">EXPLORE</button>
                     </div>
+                    <h1 id="test-h1">KEEP CALM and WORK FOR CAKE</h1>
                 </div>
-                <div id="intro-grid-item-2">
+                <div id="intro-flex-item-2">
                     <h3>PALETTE SELECTOR</h3>
                     <div class="palette-div">
                         <img class="palette-spread" id="palette-1" src="images/palette-1.jpg">
@@ -58,27 +56,28 @@
                 </div>
                 
             </section>
-
-            
         
             <!-- The Modal -->
             <section id="container-modal" class="modal">
-                <div class="modal-content">
+                <div class="modal-content" id="modal-content">
                     <div class="modal-header">
                         <span class="close-modal">&times;</span>
                     </div>
                     <div class="modal-body">
-                        <section id="container-projects">
-                            <div>
+                        <div id="container-projects">
+                            <div class="card-container">
                                 <button class="card" id="project-card"><img id="money-icon" src="images/cash-money-icon.png"><h2><a href="client.html">Client Projects</a></h2></button>
                             </div>
-                            <div>
+                            <div class="card-container">
                                 <button class="card" id="project-card"><img id="heart-icon" src="images/heart-icon.png"><h2><a href="interest.html">Interest Projects</a></h2></button>
                             </div>
-                            <div>
+                            <div class="card-container">
                                 <button class="card" id="project-card"><img id="sick-emoji-icon" src="images/kiwi-icon.jpg"><h2><a href="about.html">About Me</a></h2></button>
                             </div>
-                        </section>
+                            <div class="card-container">
+                                <button class="card" id="project-card"><img id="home-icon" src="images/home-icon.png"><h2><a href="index.html">Home</a></h2></button>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </section>
