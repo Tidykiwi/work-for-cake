@@ -10,17 +10,108 @@ body {
     padding: 5% 5% 10% 5%;
     background-image: url("../images/web-development.jpg");
     background-size: cover;
-    margin: 0;
     width: 100vw;
     height: 100vh;
 }
 
+#body-home {
+    background-image: linear-gradient(to bottom right, red, yellow);
+    width: 100vw;
+    height: 85vh;
+}
+
+#welcome-section {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 50px;
+}
+
+.circle-background {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 400px;
+    height: 400px;
+    background-image: url("../images/sun.png");
+    background-size: cover;
+}
+
+.explore-circle {
+    position: relative;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    background-color: red;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.circle-logo {
+    position: absolute;
+    width: 150px;
+    height: 150px;
+    background-image: linear-gradient(to bottom right, white, yellow, orange, red);
+    border-radius: 50%;
+}
+
+.circle-logo-inner {
+    position: absolute;
+    width: 150px;
+    height: 150px;
+    background-color: transparent;
+    background-image: url("../images/lion.png");
+    background-size: cover;
+    border-radius: 50%;
+}
+
+.circle-text {
+    color: white;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    animation: rotateText 15s linear infinite;
+}
+
+@keyframes rotateText {
+    0% {
+        transform: rotate(0deg)
+    }
+    100% {
+        transform: rotate(360deg)
+    }
+}
+
+.circle-text span {
+    position: absolute;
+    left: 50%;
+    font-size: 1.2em;
+    transform-origin: 0 100px;
+}
+
+#welcome-text {
+    color: white;
+    text-align: left;
+}
+
+#keep-calm {
+    max-height: 80vh;
+}
+
+#lion-image {
+    height: 360px;
+    width: auto;
+}
+
 main {
     padding: 10px 3vw 5vh 3vw;
-    border: solid 10px #253237;
+    border: solid 5px #253237;
     border-radius: 15px;
     background-color: #5c6b73;
     opacity: 1;
+    max-height: 80vh;;
 }
 
 .button {
@@ -120,6 +211,10 @@ h1 {
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
 }
 
+.card-container {
+    padding: 1rem 1rem 1rem 1rem;
+}
+
 #evil-button {
     position: absolute;
     transform: translate(-50%, -50%);
@@ -147,4 +242,11 @@ h1 {
 
 #home-icon {
     max-width: 90%;
+}
+
+/* Desktop to tablet - Check standard sizes */
+@media screen and (max-width: 1021px) {
+    #evil-button {
+        display: none;
+    }
 }

@@ -23,7 +23,7 @@ function changePaletteOne() {
     }
 
     main.style.backgroundColor = '#5c6b73'
-    main.style.border = 'solid 10px #253237'
+    main.style.border = 'solid 5px #253237'
 
     for (const content of contents) {
         content.style.border = 'solid 10px #9db4c0'
@@ -56,7 +56,7 @@ function changePaletteTwo() {
     } 
 
     main.style.backgroundColor = '#40798c'
-    main.style.border = 'solid 10px #1f363d'
+    main.style.border = 'solid 5px #1f363d'
 
     for (const content of contents) {
         content.style.border = 'solid 10px #70a9a1'
@@ -89,7 +89,7 @@ function changePaletteThree() {
     } 
 
     main.style.backgroundColor = '#4a4e69'
-    main.style.border = 'solid 10px #22223b'
+    main.style.border = 'solid 5px #22223b'
 
     for (const content of contents) {
         content.style.border = 'solid 10px #9a8c98'

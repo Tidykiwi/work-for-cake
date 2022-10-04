@@ -23,66 +23,62 @@
     <link rel="stylesheet" href="styles/modal.css">
 
     <script defer src="scripts/nav-modal.js" charset="utf-8"></script>
-    <script defer src="scripts/change-palette.js" charset="utf-8"></script>
 </head>
-<body>
-    <main id="main">
-        <div class="content-container">
-            <section class="container-intro-flex">
-                <div id="intro-flex-item-1">
-                    <div id="welcome-text">
-                        <p>Hello, my name is Ross.</p> 
-                        <p>I am a hands-on creator and solution-seeker disguised as a full-stack web developer.</p> 
-                        <p>I invite you to browse this site and the selection of client and other projects that it contains.</p>
-                        <p>This site is being built using HTML, SASS, & TYPESCRIPT</p>
-                    </div>
-                    <!-- Open the Modal -->
-                    <div id="nav-container">
-                        <button class="button" id="modal-button">EXPLORE</button>
-                    </div>
-                    <h1 id="test-h1">KEEP CALM and WORK FOR CAKE</h1>
+<body id="body-home">
+    <section id="welcome-section">
+        <div>
+            <img id="keep-calm" src="images/keep-calm-vertical.jpg">
+        </div>
+        <div id="welcome-text">
+            <p>Hello, my name is Ross.</p> 
+            <p>I am a hands-on creator and solution-seeker disguised as a full-stack web developer.</p> 
+            <p>Feel free to explore my site.</p>
+        </div>
+        <!-- Open the Modal -->
+        <div class="circle-background" id="modal-button">
+            <div class="explore-circle">
+                <div class="circle-logo">
+                    <div class="circle-logo-inner"></div>
                 </div>
-                <div id="intro-flex-item-2">
-                    <h3>PALETTE SELECTOR</h3>
-                    <div class="palette-div">
-                        <img class="palette-spread" id="palette-1" src="images/palette-1.jpg">
-                    </div>
-                    <div class="palette-div">
-                        <img class="palette-spread" id="palette-2" onclick="changePaletteTwo()" src="images/palette-2.jpg">
-                    </div>
-                    <div class="palette-div">
-                        <img class="palette-spread" id="palette-3" onclick="changePaletteThree()" src="images/palette-3.jpg">
-                    </div>
+                <div class="circle-text">
+                    <p>EXPLORE - EXPLORE - EXPLORE -</p>
                 </div>
-                
-            </section>
+            </div>
+        </div>
         
-            <!-- The Modal -->
-            <section id="container-modal" class="modal">
-                <div class="modal-content" id="modal-content">
-                    <div class="modal-header">
-                        <span class="close-modal">&times;</span>
-                    </div>
-                    <div class="modal-body">
-                        <div id="container-projects">
-                            <div class="card-container">
-                                <button class="card" id="project-card"><img id="money-icon" src="images/cash-money-icon.png"><h2><a href="client.html">Client Projects</a></h2></button>
-                            </div>
-                            <div class="card-container">
-                                <button class="card" id="project-card"><img id="heart-icon" src="images/heart-icon.png"><h2><a href="interest.html">Interest Projects</a></h2></button>
-                            </div>
-                            <div class="card-container">
-                                <button class="card" id="project-card"><img id="sick-emoji-icon" src="images/kiwi-icon.jpg"><h2><a href="about.html">About Me</a></h2></button>
-                            </div>
-                            <div class="card-container">
-                                <button class="card" id="project-card"><img id="home-icon" src="images/home-icon.png"><h2><a href="index.html">Home</a></h2></button>
-                            </div>
+        <!-- The Modal -->
+        <section id="container-modal" class="modal">
+            <div class="modal-content" id="modal-content">
+                <div class="modal-header">
+                    <span class="close-modal">&times;</span>
+                </div>
+                <div class="modal-body">
+                    <div id="container-projects">
+                        <div class="card-container">
+                            <button class="card" id="project-card"><img id="money-icon" src="images/cash-money-icon.png"><h2><a href="client.html">Client Projects</a></h2></button>
+                        </div>
+                        <div class="card-container">
+                            <button class="card" id="project-card"><img id="heart-icon" src="images/heart-icon.png"><h2><a href="interest.html">Interest Projects</a></h2></button>
+                        </div>
+                        <div class="card-container">
+                            <button class="card" id="project-card"><img id="sick-emoji-icon" src="images/kiwi-icon.jpg"><h2><a href="about.html">About Me</a></h2></button>
+                        </div>
+                        <div class="card-container">
+                            <button class="card" id="project-card"><img id="home-icon" src="images/home-icon.png"><h2><a href="index.html">Home</a></h2></button>
                         </div>
                     </div>
                 </div>
-            </section>
-        </div>
-
-    </main>
+            </div>
+        </section>
+    </section>
+    
+    
+    <script>
+        const text = document.querySelector('.circle-text p')
+        text.innerHTML = text.innerText.split("").map(
+            (char, i) =>
+            `<span style="transform:rotate(${i * 12}deg)">${char}</span>`
+        ).join("")
+    </script>
 </body>
 </html>

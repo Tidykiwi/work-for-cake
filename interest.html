@@ -22,6 +22,7 @@
         <link rel="stylesheet" href="styles/style.css">
         <link rel="stylesheet" href="styles/modal.css">
         <script defer src="scripts/nav-modal.js" charset="utf-8"></script>
+        <script defer src="scripts/change-palette.js" charset="utf-8"></script>
         <script defer src="scripts/evil-btn.js" charset="utf-8"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.js"></script>
     </head>
@@ -30,6 +31,18 @@
         <div class="content-container">
             <h1>Here are some showcase projects</h1>
             <div id="interest-content">
+                <div id="intro-flex-item-2">
+                    <h3>PALETTE SELECTOR</h3>
+                    <div class="palette-div">
+                        <img class="palette-spread" id="palette-1" src="images/palette-1.jpg">
+                    </div>
+                    <div class="palette-div">
+                        <img class="palette-spread" id="palette-2" onclick="changePaletteTwo()" src="images/palette-2.jpg">
+                    </div>
+                    <div class="palette-div">
+                        <img class="palette-spread" id="palette-3" onclick="changePaletteThree()" src="images/palette-3.jpg">
+                    </div>
+                </div>
                 <div class="card-container">
                     <div class="card">
                         <h3>This Project</h3>
