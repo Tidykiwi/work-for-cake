@@ -25,53 +25,53 @@
     <script defer src="scripts/nav-modal.js" charset="utf-8"></script>
 </head>
 <body id="body-home">
-    <section id="welcome-section">
-        <div>
+    <section id="landing-section">
+        <div class="keep-calm">
             <img id="keep-calm" src="images/keep-calm-vertical.jpg">
         </div>
-        <div id="welcome-text">
-            <p>Hello, my name is Ross.</p> 
-            <p>I am a hands-on creator and solution-seeker disguised as a full-stack web developer.</p> 
-            <p>Feel free to explore my site.</p>
-        </div>
-        <!-- Open the Modal -->
-        <div class="circle-background" id="modal-button">
-            <div class="explore-circle">
-                <div class="circle-logo">
-                    <div class="circle-logo-inner"></div>
-                </div>
+        <div class="landing-content">
+            <div id="welcome-text">
+                <p>Hello, my name is Ross.</p> 
+                <p>I am a hands-on creator and solution-seeker disguised as a full-stack web developer.</p> 
+                <p>Please explore my site.</p>
+            </div>
+            <!-- Open the Modal -->
+            <div class="circle-background" id="modal-button">
+                <div class="explore-circle">
+                    <div class="circle-logo">
+                        <div class="circle-logo-inner"></div>
+                    </div>
                 <div class="circle-text">
-                    <p>EXPLORE - EXPLORE - EXPLORE -</p>
+                    <p>EXPLORE &#x2605 EXPLORE &#x2605 EXPLORE &#x2605</p>
                 </div>
             </div>
         </div>
-        
-        <!-- The Modal -->
-        <section id="container-modal" class="modal">
-            <div class="modal-content" id="modal-content">
-                <div class="modal-header">
-                    <span class="close-modal">&times;</span>
-                </div>
-                <div class="modal-body">
-                    <div id="container-projects">
-                        <div class="card-container">
-                            <button class="card" id="project-card"><img id="money-icon" src="images/cash-money-icon.png"><h2><a href="client.html">Client Projects</a></h2></button>
-                        </div>
-                        <div class="card-container">
-                            <button class="card" id="project-card"><img id="heart-icon" src="images/heart-icon.png"><h2><a href="interest.html">Interest Projects</a></h2></button>
-                        </div>
-                        <div class="card-container">
-                            <button class="card" id="project-card"><img id="sick-emoji-icon" src="images/kiwi-icon.jpg"><h2><a href="about.html">About Me</a></h2></button>
-                        </div>
-                        <div class="card-container">
-                            <button class="card" id="project-card"><img id="home-icon" src="images/home-icon.png"><h2><a href="index.html">Home</a></h2></button>
-                        </div>
+    </section>    
+
+    <!-- The Modal -->
+    <section id="container-modal" class="modal">
+        <div class="modal-content" id="modal-content">
+            <div class="modal-header">
+                <span class="close-modal">&times;</span>
+            </div>
+            <div class="modal-body">
+                <div id="container-projects">
+                    <div class="card-container">
+                        <a href="client.html"><button class="card" id="project-card"><img id="money-icon" src="images/cash-money-icon.png"><h2>Client Projects</h2></button></a>
+                    </div>
+                    <div class="card-container">
+                        <a href="interest.html"><button class="card" id="project-card"><img id="heart-icon" src="images/heart-icon.png"><h2>Interest Projects</h2></button></a>
+                    </div>
+                    <div class="card-container">
+                        <a href="about.html"><button class="card" id="project-card"><img id="sick-emoji-icon" src="images/lion-eating.webp"><h2>About Me</h2></button></a>
+                    </div>
+                    <div class="card-container">
+                        <h2><a href="index.html"><button class="card" id="project-card"><img id="home-icon" src="images/home-icon.png"><h2>Home</h2></button></a>
                     </div>
                 </div>
             </div>
-        </section>
+        </div>
     </section>
-    
     
     <script>
         const text = document.querySelector('.circle-text p')
