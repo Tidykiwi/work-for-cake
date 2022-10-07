@@ -368,6 +368,11 @@ h1 {
 
 /* Desktop to tablet - Check standard sizes */
 @media screen and (max-width: 915px) {
+
+    body {
+        overflow-x: hidden;
+    }
+
     #landing-section {
         flex-direction: column;
         align-items: center;     
@@ -375,6 +380,7 @@ h1 {
 
     .intro-block-red {
         width: 100%;
+        padding: 0 0 4rem 0;
     }
 
     .landing-content {
