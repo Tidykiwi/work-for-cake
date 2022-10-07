@@ -23,17 +23,57 @@ body {
     justify-content:space-between
 }
 
-#welcome-text {
-    display: none;
-    font-size: 20px;
-    line-height: 1.5;
-    color: white;
-    text-align: left;
-    padding: 5% 0 0 0;
+.intro-block-red {
+    display: flex;
+    flex-direction:column-reverse;
+    justify-content: space-between;
+    gap: 40px;
+    align-items: center;
+    width: 500px;
+    height: auto;
+    padding: 2rem 0 2rem 0;
+    background-color: rgb(183, 11, 11);
 }
 
-#keep-calm {
-    max-height: 85vh;
+#welcome-text {
+    width: 90%;
+    font-size: 19px;
+    line-height: 1.5;
+    color: white;
+    text-align: center;
+}
+
+#welcome-text p {
+    padding-bottom: 0.5rem;
+}
+
+#keep-calm-vert-poster {
+    display: none;
+}
+
+.keep-calm-intro {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#keep-calm-crown-intro {
+    width: 110px;
+    margin: 0 0 1rem 0;
+}
+
+.keep-calm-intro-text {
+    text-align: center;
+    font-weight: 700;
+    font-size: 50px;
+    line-height: 1;
+    letter-spacing: 0.10rem;
+    color: white;
+}
+
+#landing-section > div.intro-block-red > div.keep-calm-intro > div.keep-calm-intro-text > p:nth-child(3) {
+    font-size: xx-large;
+    margin: 1rem 0 1rem 0;
 }
 
 #lion-image {
@@ -288,6 +328,7 @@ h1 {
 }
 
 .footer-container {
+    visibility: hidden;
     padding: 1rem 0 0 0;
     display: flex;
     flex-direction: row;
@@ -326,20 +367,19 @@ h1 {
 }
 
 /* Desktop to tablet - Check standard sizes */
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 915px) {
     #landing-section {
-        flex-direction: column-reverse;
+        flex-direction: column;
         align-items: center;     
     }
 
-    #welcome-text {
-        display:block;
-        text-align: center;
-        padding: 10%;
+    .intro-block-red {
+        width: 100%;
     }
 
-    #keep-calm {
-        margin: 5rem 0 5rem 0;
+    .landing-content {
+        padding: 2rem 0 2rem 0;
     }
+    
 }
 
