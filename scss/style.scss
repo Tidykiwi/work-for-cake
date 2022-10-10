@@ -6,6 +6,8 @@ $color-white: #FFFBFA;
 
 $color-black: #191308;
 
+$color-red: rgb(183, 11, 11);
+
 .social-icons-wrapper {
   display: flex;
   justify-content: space-around;
@@ -44,7 +46,7 @@ $color-black: #191308;
     & .social-group {
 
       &__icon {
-        fill: $color-black;
+        fill: $color-red;
         transition: all .2s;
       }
 
@@ -54,7 +56,7 @@ $color-black: #191308;
       }
 
       &__outline {
-        stroke: $color-black;
+        stroke: $color-red;
         transform-origin: 50% 50%;
         transition: all .2s;
       }
