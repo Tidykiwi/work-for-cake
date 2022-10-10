@@ -9,7 +9,7 @@ body {
     font-family: Arial, Helvetica, sans-serif;
     background-image: url("../images/web-development.jpg");
     background-size: cover;
-    /* overflow-x: hidden; */
+    overflow-x: hidden;
 }
 
 #body-home {
@@ -25,7 +25,7 @@ body {
 
 .intro-block-red {
     display: flex;
-    flex-direction:column-reverse;
+    flex-direction:column;
     justify-content: space-between;
     gap: 40px;
     align-items: center;
@@ -33,22 +33,6 @@ body {
     height: auto;
     padding: 2rem 0 2rem 0;
     background-color: rgb(183, 11, 11);
-}
-
-#welcome-text {
-    width: 90%;
-    font-size: 19px;
-    line-height: 1.5;
-    color: white;
-    text-align: center;
-}
-
-#welcome-text p {
-    padding-bottom: 0.5rem;
-}
-
-#keep-calm-vert-poster {
-    display: none;
 }
 
 .keep-calm-intro {
@@ -76,6 +60,18 @@ body {
     margin: 1rem 0 1rem 0;
 }
 
+#intro-block-welcome-text {
+    width: 90%;
+    font-size: 19px;
+    line-height: 1.5;
+    color: white;
+    text-align: center;
+}
+
+#intro-block-welcome-text p {
+    padding-bottom: 0.5rem;
+}
+
 #lion-image {
     height: 360px;
     width: auto;
@@ -85,8 +81,8 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 400px;
-    height: 400px;
+    width: 370px;
+    height: 370px;
     background-image: url("../images/sun.png");
     background-size: cover;
     animation: rotateSun 50s linear infinite;
@@ -185,6 +181,10 @@ main {
     background-color:#5c6b73;
   }
 
+a {
+    text-decoration: none;
+}
+
 h1 {
     color: #353535;
 }
@@ -249,7 +249,7 @@ h1 {
     width: 50%;
 }
 
-#nav-container {
+.nav-container {
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -290,8 +290,9 @@ h1 {
     cursor: pointer;
 }
 
-.client-image {
-    max-width: 90%;;
+.client-image,
+.interest-image {
+    max-width: 90%;
 }
 
 #evil-button {
@@ -303,61 +304,101 @@ h1 {
     border: none;
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);}
 
-#money-icon {
+.nav-modal-image {
     max-width: 90%;
 }
 
-#heart-icon {
-    max-width: 90%;
-}
-
-#sick-emoji-icon {
-    max-width: 90%;
-}
-
-.test-image {
-    width: 250px;
-}
-
-#home-icon {
-    max-width: 90%;
-}
+/*--------- Footer Social Icon Links ----------*/
 
 .footer-section {
     background-image: linear-gradient(to bottom right, red, orange);
 }
 
 .footer-container {
-    visibility: hidden;
-    padding: 1rem 0 0 0;
+    padding: 2rem 0 1.5rem 0;
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
 }
 
-.footer-image {
+.wrapper {
     display: flex;
-    width: 150px;
-    padding: 0 0 1rem 0;
     justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100;
+    transition: all .4s ease-out;
 }
 
-#keep-calm-crown {
-    width: 75px;
+.wrapper__links {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    width: 70%;
 }
 
-.footer-section p {
-    font-weight: 700;
-    font-size: xx-large;
-    color: white;
-    word-spacing: 0.5rem;
+.social-link--linkedin {
+    color: #2d76b0;
 }
 
-.footer-section span {
-    font-size: x-large;
-
+.social-link--github {
+    color: #000;
 }
+
+.social-link--instagram {
+    color: #9a2970;
+}
+
+.social-svg {
+    width: 4.8rem;
+    height: 4.8rem;
+}
+
+.social-group__icon {
+    fill: rgb(183, 11, 11);
+    transition: all .2s;
+}
+
+.social-group__icon:hover,
+.social-group__icon:active,
+.social-group__icon:focus {
+    fill: #FFFBFA;
+    transition: all .45s;
+}
+
+.social-group__inner-circle {
+    fill: transparent;
+    transition: all .2s;
+}
+
+.social-group__inner-circle:hover,
+.social-group__inner-circle:active,
+.social-group__inner-circle:focus {
+    fill: currentColor;
+    transition: all .45s;
+}
+
+.social-group__inner-circle--instagram:hover,
+.social-group__inner-circle--instagram:active,
+.social-group__inner-circle--instagram:focus {
+    fill: url(#simpleInsta) !important;
+}
+.social-group__outline {
+    stroke: rgb(183, 11, 11);
+    transform-origin: 50% 50%;
+    transition: all .2s;
+}
+
+.social-group__outline:hover,
+.social-group__outline:active,
+.social-group__outline:focus {
+    stroke: currentColor;
+    transform: scale(1.1);
+    transition: all .45s;
+}
+
 
 /* Desktop to tablet - Check standard sizes */
 @media screen and (max-width: 1021px) {
@@ -380,12 +421,16 @@ h1 {
 
     .intro-block-red {
         width: 100%;
-        padding: 0 0 4rem 0;
+        padding: 2rem 0 4rem 0;
     }
 
     .landing-content {
         padding: 2rem 0 2rem 0;
     }
     
+    .wrapper {
+        width: 100%;
+    }
 }
+
 

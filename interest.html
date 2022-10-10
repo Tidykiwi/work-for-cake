@@ -100,38 +100,38 @@
             <a href="index.html"><button class="button" id="home-button">Home</button></a> -->
 
             <!-- Open the Modal -->
-            <div id="nav-container"> <!-- class = nav???? -->
+            <div class="nav-container" id="interest-nav-container">
                 <button class="button" id="modal-button">Explore</button>
                 <a href="index.html"><button class="button" id="home-button">Home</button></a>
             </div>
             <div>
-            <button class="project-card" id="evil-button"><img id="sick-emoji-icon" src="images/sick-emoji.png"><h2><a href="https://www.goodhousekeeping.com/life/parenting/a36279135/best-corny-dad-jokes-for-kids/" target="_blank">Broken Projects</a></h2></button>
+            <button class="project-card" id="evil-button"><img class="interest-image" id="interest-sick-emoji" src="images/sick-emoji.png"><h2><a href="https://www.goodhousekeeping.com/life/parenting/a36279135/best-corny-dad-jokes-for-kids/" target="_blank">Broken Projects</a></h2></button>
             </div>
 
             <!-- The Modal -->
-            <section id="container-modal" class="modal">
-                <div class="modal-content" id="modal-content">
-                    <div class="modal-header">
-                        <span class="close-modal">&times;</span>
+    <section id="container-modal" class="modal">
+        <div class="modal-content" id="modal-content">
+            <div class="modal-header">
+                <span class="close-modal">&times;</span>
+            </div>
+            <div class="modal-body">
+                <div id="container-projects">
+                    <div class="card-container">
+                        <a href="client.html"><button class="card" id="project-card"><img class="nav-modal-image" id="nav-modal-money" src="images/cash-money-icon.png"><h2>Client Projects</h2></button></a>
                     </div>
-                    <div class="modal-body">
-                        <div id="container-projects">
-                            <div class="card-container">
-                                <a href="client.html"><button class="card" id="project-card"><img id="money-icon" src="images/cash-money-icon.png"><h2>Client Projects</h2></button></a>
-                            </div>
-                            <div class="card-container">
-                                <a href="interest.html"><button class="card" id="project-card"><img id="heart-icon" src="images/heart-icon.png"><h2>Interest Projects</h2></button></a>
-                            </div>
-                            <div class="card-container">
-                                <a href="about.html"><button class="card" id="project-card"><img id="sick-emoji-icon" src="images/lion-eating.webp"><h2>About Me</h2></button></a>
-                            </div>
-                            <div class="card-container">
-                                <a href="index.html"><button class="card" id="project-card"><img id="home-icon" src="images/home-icon.png"><h2>Home</h2></button></a>
-                            </div>
-                        </div>
+                    <div class="card-container">
+                        <a href="interest.html"><button class="card" id="project-card"><img class="nav-modal-image" id="nav-modal-heart" src="images/heart-icon.png"><h2>Interest Projects</h2></button></a>
+                    </div>
+                    <div class="card-container">
+                        <a href="about.html"><button class="card" id="project-card"><img class="nav-modal-image" id="nav-modal-lion" src="images/lion-eating.webp"><h2>About Me</h2></button></a>
+                    </div>
+                    <div class="card-container">
+                        <h2><a href="index.html"><button class="card" id="project-card"><img class="nav-modal-image" id="nav-modal-home" src="images/home-icon.png"><h2>Home</h2></button></a>
                     </div>
                 </div>
-            </section>
+            </div>
+        </div>
+    </section>
         </div>
         
     </main>
