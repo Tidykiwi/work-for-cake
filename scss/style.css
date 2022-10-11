@@ -4,7 +4,6 @@
   align-items: center;
   width: 800px;
   height: 600px;
-  background-image: linear-gradient(to bottom right, #81c2de, #4f92ac);
   transition: all 0.4s ease-out;
 }
 .social-icons-wrapper__links {
@@ -48,6 +47,9 @@
   fill: currentColor;
   transition: all 0.45s;
 }
+.social-link .social-svg:hover .social-group__inner-circle--linkedin, .social-link .social-svg:active .social-group__inner-circle--linkedin, .social-link .social-svg:focus .social-group__inner-circle--linkedin {
+  fill: url(#simpleLinkedin) !important;
+}
 .social-link .social-svg:hover .social-group__inner-circle--instagram, .social-link .social-svg:active .social-group__inner-circle--instagram, .social-link .social-svg:focus .social-group__inner-circle--instagram {
   fill: url(#simpleInsta) !important;
 }
@@ -55,6 +57,4 @@
   stroke: currentColor;
   transform: scale(1.1);
   transition: all 0.45s;
-}
-
-/*# sourceMappingURL=sass.css.map */
+}/*# sourceMappingURL=style.css.map */

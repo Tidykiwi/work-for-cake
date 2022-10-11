@@ -3,7 +3,7 @@
     display: none; /* Hidden by default */
     position: fixed; /* Stay in place */
     z-index: 1; /* Sit on top */
-    padding-top: 100px; /* Location of the box */
+    padding: 7rem 0 4rem 0; /* Location of the box */
     left: 0;
     top: 0;
     width: 100%; /* Full width */
@@ -29,7 +29,7 @@
     animation-name: animatetop;
     animation-duration: 0.5s
   }
-  
+
   /* Add Animation */
   @-webkit-keyframes animatetop {
     from {top:-300px; opacity:0} 
@@ -40,14 +40,54 @@
     from {top:-300px; opacity:0}
     to {top:0; opacity:1}
   }
+
+  .nav-card-container {
+    opacity: 0;
+    -webkit-animation-name: animatecard;
+    -webkit-animation-duration: 0.7s;
+    animation-name: animatecard;
+    animation-duration: 0.7s;
+    animation-fill-mode: forwards;
+  }
+
+  .nav-card-container:nth-child(1) {
+    animation-delay: 0.3s;
+  }
+
+  .nav-card-container:nth-child(2){
+    animation-delay: 0.6s;
+  }
   
+  .nav-card-container:nth-child(3){
+    animation-delay: 0.9s;
+  }
+  
+  /* Add Animation */
+  @-webkit-keyframes animatecard {
+    from {scale: 0; opacity:0} 
+    to {scale:1; opacity:1}
+  }
+  
+  @keyframes animatecard {
+    from {scale:0; opacity:0}
+    to {scale:1; opacity:1}
+  }
+  
+  .modal-header {
+    display:flex;
+    flex-direction:row;
+    justify-content:end;
+    align-items: center;
+    height: 3rem;
+  }
+
   /* The Close Button */
   .close-modal {
     color: #3c6e71;
-    margin: 0 10px 0 0;
     float: right;
-    font-size: 40px;
-    font-weight: bold;
+    font-size: 50px;
+    font-weight:600;
+    margin: 0 10px 0 0;
   }
   
   .close-modal:hover,
@@ -57,11 +97,32 @@
     cursor: pointer;
   }
   
-  .modal-header {
-    height: 2rem;
+.material-icons {
+  color: #3c6e71;
+  font-size: 36px !important;
+  margin: 0 5px 0 0;
+}
+
+.material-icons:hover,
+.material-icons:focus {
+  color: #353535;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.modal-body {
+  padding: 1rem 1rem 0 1rem;
+}
+
+/* Desktop to tablet - Check standard sizes */
+@media screen and (max-width: 915px) {
+
+  .modal {
+    padding: 9rem 2.5rem 4rem 2.5rem;
   }
-  
-  .modal-body {
-    padding: 1rem 2rem 0 1rem;
+
+  #container-projects {
+    gap: 50px;
   }
-  
+
+}

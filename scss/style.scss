@@ -14,7 +14,6 @@ $color-red: rgb(183, 11, 11);
   align-items: center;
   width: 800px;
   height: 600px;
-  background-image: linear-gradient(to bottom right, rgba($color-primary,1),rgba($color-primary-dark,1));
   transition: all .4s ease-out;
   
   &__links {
@@ -75,6 +74,10 @@ $color-red: rgb(183, 11, 11);
         &__inner-circle {
           fill: currentColor;
           transition: all .45s;
+
+          &--linkedin {
+            fill: url(#simpleLinkedin) !important;
+          }
 
           &--instagram {
             fill: url(#simpleInsta) !important;
