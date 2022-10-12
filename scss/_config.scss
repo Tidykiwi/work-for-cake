@@ -1,0 +1,53 @@
+// Use config file for global variables / mixins / functions
+
+$primary-color: #81c2de;
+$primary-color-light: #b4f5ff;
+$primary-color-dark: #4f92ac;
+
+$secondary-color: pink;
+
+$color-white: #FFFBFA;
+$color-black: #191308;
+$color-red: rgb(183, 11, 11);
+
+// Function to set text color based on background
+@function set-text-color($color) {
+    @if(lightness($color) > 70) {
+        @return #333;
+    } @else {
+        @return #fff;
+    }
+}
+
+// Mixin to set background color and text color
+@mixin set-background($color) {
+    background-color: $color;
+    color: set-text-color($color)
+}
+
+// Loop to create margin and padding classes
+$spaceamounts: (1,2,3,4,5);
+
+@each $space in $spaceamounts {
+    // Create margin classes .m-????????
+    .m-#{$space} {
+        margin: #{$space}rem;
+    }
+    .my-#{$space} {
+        margin: #{$space}rem 0;
+    }
+    .mx-#{$space} {
+        margin: 0 #{$space}rem;
+    }
+
+    // Create padding classes .p-????????
+    .p-#{$space} {
+        padding: #{$space}rem;
+    }
+    .py-#{$space} {
+        padding: #{$space}rem 0;
+    }
+    .px-#{$space} {
+        padding: 0 #{$space}rem;
+    }
+}

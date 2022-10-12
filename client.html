@@ -19,9 +19,9 @@
     <link rel="icon" href="/favicon.svg" type="image/svg+xml">
     <link rel="apple-touch-icon" href="/apple-touch-icon.png">
     
-    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="styles/css-style.css">
     <link rel="stylesheet" href="styles/modal.css">
-    <link rel="stylesheet" href="scss/style.css">
+    <link rel="stylesheet" href="css/style.css">
 
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
 
@@ -30,88 +30,72 @@
 </head>
 <body id="body-client">
 
-    <section class="main-section">
-        <div class="intro-block-blue">
-            <div class="keep-calm-intro">
-                <div class="keep-calm-intro-image">
-                    <img id="keep-calm-crown-intro" src="images/keep-calm-crown.png">
-                </div>
-                <div class="keep-calm-intro-text">
-                    <p>KEEP</p> 
-                    <p>CALM</p>
-                    <p>AND</p>
-                    <p>WORK</p>
-                    <p>FOR</p>
-                    <p>CAKE</p>
-                </div>
-            </div>
-            <div id="intro-block-welcome-text">
-                <p>&#x2605 &#x2605 &#x2605 Hello, my name is Ross &#x2605 &#x2605 &#x2605</p> 
-                <p>I am a hands-on creator and solution-seeker disguised as a full-stack web developer.</p>
-                <!-- <p>&#x2605 I invite you to explore my site &#x2605</p> -->
-            </div>
+    <section class="section-main section-main-client">
+      
+      <div class="intro-block" id="intro-block-blue">
+        <div class="keep-calm-intro">
+          <div class="keep-calm-intro-image">
+            <img id="keep-calm-crown-intro" src="images/keep-calm-crown.png">
+          </div>
+          <div class="keep-calm-intro-text">
+            <p>KEEP</p> 
+            <p>CALM</p>
+            <p>AND</p>
+            <p>WORK</p>
+            <p>FOR</p>
+            <p>CAKE</p>
+          </div>
         </div>
-
-        <div class="content-container">
-            <h1>Here are some client projects</h1>
-            <div id="client-content">
-                <div class="card-container">
-                    <div class="card">
-                        <img class="client-image" src="images/john-sue.jpg">
-                        <h3>For John & Sue</h3>
-                        <p>Re-built a Wedding venue site in <strong>WordPress</strong></p>
-                        <a href="https://www.trentsvineyard.co.nz/" target="_blank" ><button class="button" id="trents-button">Trents</button></a>
-                    </div>
-                </div>
-                <div class="card-container">
-                    <div class="card">
-                        <img class="client-image" src="images/BNZFS.jpg">
-                        <h3>For the BNZFS (The Bangladesh New Zealand Friendship Society)</h3>
-                        <p>Co-developed a new site in <strong>Webflow</strong></p>
-                        <a href="https://www.bnzfs.webflow.io/" target="_blank" ><button class="button" id="bnzfs-button">BNZFS</button></a>
-                    </div>
-                </div>
-                <div class="card-container">
-                    <div class="card">
-                        <img class="client-image" src="images/nihi-logo-mini.png">
-                        <h3>For NIHI (The National Institue for Health Innovation)</h3>
-                        <p>Implemented site-wide mobile responsiveness in <strong>Webflow</strong></p>
-                        <a href="https://www.networkz.ac.nz/" target="_blank" ><button class="button" id="networkZ-button">NetworkZ</button></a>
-                    </div>
-                </div>
-                
-            </div>
-            
-            <!-- <a href="interest.html"><button class="button" id="interest-button">Interest Projects</button></a>
-            <a href="about.html"><button class="button" id="about-button">About Me</button></a>
-            <a href="index.html"><button class="button" id="home-button">Home</button></a> -->
-
-            
-            <div class="nav-container" id="client-nav-container">
-                <!-- Open the Modal --> 
-                <button class="button" id="modal-button">Explore</button>
-                <a href="index.html"><button class="button" id="home-button">Home</button></a>
-            </div>
-
+        <div id="intro-block-welcome-text">
+          <p>&#x2605 &#x2605 &#x2605</p> 
+          <p>"Beauty arrests motion."</p>
+          <p>&#x2605 &#x2605 &#x2605</p>
         </div>
-
-        <div class="landing-content">
-            <!-- Open the Modal -->
-            <div class="circle-background" id="modal-button"> 
-                <div class="explore-circle">
-                    <div class="circle-logo">
-                        <div class="circle-logo-inner"></div>
-                    </div>
-                <div class="circle-text">
-                    <p>EXPLORE &#x2605 EXPLORE &#x2605 EXPLORE &#x2605</p>
-                </div>
-            </div>
+        <div class="nav-container" id="client-nav-container">
+          <!-- Open the Modal --> 
+          <button class="button" id="modal-button">Explore</button>
+          <a href="index.html"><button class="button" id="home-button">Home</button></a>
         </div>
+      </div>
 
+      <div class="content-block">
+
+        <!--<div class="content-block-text">
+          <h1>Your developer is the means by which you bring your digital ideas into being.</h1>
+          <h1>They are the means by which your vision becomes real!</h1>
+        </div> -->
+
+        <div class="content-block-content">
+          <div class="card-container">
+            <div class="card client-card">
+              <img class="client-image" src="images/john-sue.jpg">
+              <h3>For John & Sue</h3>
+              <p>Re-built a Wedding venue site in <strong>WordPress</strong></p>
+              <a href="https://www.trentsvineyard.co.nz/" target="_blank" ><button class="button" id="trents-button">Trents</button></a>
+            </div>
+          </div>
+          <div class="card-container">
+            <div class="card">
+              <img class="client-image" src="images/BNZFS.jpg">
+              <h3>For the BNZFS (The Bangladesh New Zealand Friendship Society)</h3>
+              <p>Co-developed a new site in <strong>Webflow</strong></p>
+              <a href="https://www.bnzfs.webflow.io/" target="_blank" ><button class="button" id="bnzfs-button">BNZFS</button></a>
+            </div>
+          </div>
+          <div class="card-container">
+            <div class="card">
+              <img class="client-image" src="images/nihi-logo-mini.png">
+              <h3>For NIHI (The National Institue for Health Innovation)</h3>
+              <p>Implemented site-wide mobile responsiveness in <strong>Webflow</strong></p>
+              <a href="https://www.networkz.ac.nz/" target="_blank" ><button class="button" id="networkZ-button">NetworkZ</button></a>
+            </div>
+          </div>
+        </div>
+      </div>
     </section>    
 
     <!-- The Modal -->
-    <section id="container-modal" class="modal">
+    <section id="container-modal" class="modal modal-client">
         <div class="modal-content" id="modal-content">
             <div class="modal-header"> 
                 <a href="index.html">
@@ -135,7 +119,7 @@
         </div>
     </section>
 
-    <section class="footer-section">
+    <section class="footer-section footer-client">
         <div class="footer-container" id="home-footer">    
           <div class="wrapper">
             <div class="wrapper__links">

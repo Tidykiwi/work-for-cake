@@ -1,12 +1,17 @@
-$color-primary: #81c2de;
-$color-primary-light: #b4f5ff;
-$color-primary-dark: #4f92ac;
+@import 'config';
 
-$color-white: #FFFBFA;
+// Example of set-text-color function (sets text color based on background color)
+.showcase {
+  background-color: $primary-color;
+  color: set-text-color($primary-color);
+  height: 600px;
+}
 
-$color-black: #191308;
-
-$color-red: rgb(183, 11, 11);
+// Example of mixin that sets background color and also calls set-text-color function using same argument
+.showcase {
+  @include set-background($primary-color);
+  height: 600px;
+}
 
 .social-icons-wrapper {
   display: flex;
@@ -25,6 +30,8 @@ $color-red: rgb(183, 11, 11);
 }
 
 .social-link {
+
+  cursor: pointer;
 
   &--linkedin {
     color: #2d76b0;
@@ -93,3 +100,7 @@ $color-red: rgb(183, 11, 11);
     }
   }
 }
+
+// Placed at bottom to appear at bottom of complied css file
+@import 'utilities';
+@import 'mobile';

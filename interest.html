@@ -19,8 +19,9 @@
     <link rel="icon" href="/favicon.svg" type="image/svg+xml">
     <link rel="apple-touch-icon" href="/apple-touch-icon.png">
     
-    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="styles/css-style.css">
     <link rel="stylesheet" href="styles/modal.css">
+    <link rel="stylesheet" href="css/style.css">
 
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
 
@@ -29,8 +30,41 @@
     <script defer src="scripts/evil-btn.js" charset="utf-8"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.js"></script>
 </head>
-<body>
-    <main id="main">
+<body id="body-interest">
+
+    <section class="main-section">
+
+        <div class="intro-block" id="intro-block-black">
+            <div class="keep-calm-intro">
+                <div class="keep-calm-intro-image">
+                    <img id="keep-calm-crown-intro" src="images/keep-calm-crown.png">
+                </div>
+                <div class="keep-calm-intro-text">
+                    <p>KEEP</p> 
+                    <p>CALM</p>
+                    <p>AND</p>
+                    <p>WORK</p>
+                    <p>FOR</p>
+                    <p>CAKE</p>
+                </div>
+            </div>
+            <div id="intro-block-welcome-text">
+                <p>&#x2605 &#x2605 &#x2605</p> 
+                <p>"Choosing doubt as a philosophy of life is equivilant to choosing immobility as a form of movement."</p>
+                <p>&#x2605 &#x2605 &#x2605</p>
+                <!-- <p>&#x2605 I invite you to explore my site &#x2605</p> -->
+            </div>
+            <div class="nav-container" id="client-nav-container">
+              <!-- Open the Modal --> 
+              <button class="button" id="modal-button">Explore</button>
+              <a href="index.html"><button class="button" id="home-button">Home</button></a>
+          </div>
+        </div>
+
+        <div>
+            <h1>WELCOME TO THE WORKSHOP!</h1>
+        </div>
+
         <div class="content-container" id="interest-content-container">
             <h1>Here are some showcase projects</h1>
             <div id="interest-content">
@@ -96,24 +130,14 @@
                     </div>
                 </div>
             </div>
-            
-            
-            <!-- <a href="interest.html"><button class="button" id="interest-button">Interest Projects</button></a>
-            <a href="about.html"><button class="button" id="about-button">About Me</button></a>
-            <a href="index.html"><button class="button" id="home-button">Home</button></a> -->
 
-            <!-- Open the Modal -->
-            <div class="nav-container" id="interest-nav-container">
-                <button class="button" id="modal-button">Explore</button>
-                <a href="index.html"><button class="button" id="home-button">Home</button></a>
-            </div>
             <div>
             <button class="project-card" id="evil-button"><img class="interest-image" id="interest-sick-emoji" src="images/sick-emoji.png"><h2><a href="https://www.goodhousekeeping.com/life/parenting/a36279135/best-corny-dad-jokes-for-kids/" target="_blank">Broken Projects</a></h2></button>
             </div>
         </div>
 
     <!-- The Modal -->
-    <section id="container-modal" class="modal">
+    <section id="container-modal" class="modal modal-interest">
         <div class="modal-content" id="modal-content">
             <div class="modal-header"> 
                 <a href="index.html">
@@ -137,6 +161,6 @@
         </div>
     </section>
         
-    </main>
+    </section>
 </body>
 </html>

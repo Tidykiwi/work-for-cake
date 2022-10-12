@@ -1,0 +1,244 @@
+.m-1 {
+  margin: 1rem;
+}
+
+.my-1 {
+  margin: 1rem 0;
+}
+
+.mx-1 {
+  margin: 0 1rem;
+}
+
+.p-1 {
+  padding: 1rem;
+}
+
+.py-1 {
+  padding: 1rem 0;
+}
+
+.px-1 {
+  padding: 0 1rem;
+}
+
+.m-2 {
+  margin: 2rem;
+}
+
+.my-2 {
+  margin: 2rem 0;
+}
+
+.mx-2 {
+  margin: 0 2rem;
+}
+
+.p-2 {
+  padding: 2rem;
+}
+
+.py-2 {
+  padding: 2rem 0;
+}
+
+.px-2 {
+  padding: 0 2rem;
+}
+
+.m-3 {
+  margin: 3rem;
+}
+
+.my-3 {
+  margin: 3rem 0;
+}
+
+.mx-3 {
+  margin: 0 3rem;
+}
+
+.p-3 {
+  padding: 3rem;
+}
+
+.py-3 {
+  padding: 3rem 0;
+}
+
+.px-3 {
+  padding: 0 3rem;
+}
+
+.m-4 {
+  margin: 4rem;
+}
+
+.my-4 {
+  margin: 4rem 0;
+}
+
+.mx-4 {
+  margin: 0 4rem;
+}
+
+.p-4 {
+  padding: 4rem;
+}
+
+.py-4 {
+  padding: 4rem 0;
+}
+
+.px-4 {
+  padding: 0 4rem;
+}
+
+.m-5 {
+  margin: 5rem;
+}
+
+.my-5 {
+  margin: 5rem 0;
+}
+
+.mx-5 {
+  margin: 0 5rem;
+}
+
+.p-5 {
+  padding: 5rem;
+}
+
+.py-5 {
+  padding: 5rem 0;
+}
+
+.px-5 {
+  padding: 0 5rem;
+}
+
+.showcase {
+  background-color: #81c2de;
+  color: #fff;
+  height: 600px;
+}
+
+.showcase {
+  background-color: #81c2de;
+  color: #fff;
+  height: 600px;
+}
+
+.social-icons-wrapper {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 800px;
+  height: 600px;
+  transition: all 0.4s ease-out;
+}
+.social-icons-wrapper__links {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 70%;
+}
+
+.social-link {
+  cursor: pointer;
+}
+.social-link--linkedin {
+  color: #2d76b0;
+}
+.social-link--github {
+  color: #000;
+}
+.social-link--instagram {
+  color: #9a2970;
+}
+.social-link .social-svg {
+  width: 4.8rem;
+  height: 4.8rem;
+}
+.social-link .social-svg .social-group__icon {
+  fill: rgb(183, 11, 11);
+  transition: all 0.2s;
+}
+.social-link .social-svg .social-group__inner-circle {
+  fill: transparent;
+  transition: all 0.2s;
+}
+.social-link .social-svg .social-group__outline {
+  stroke: rgb(183, 11, 11);
+  transform-origin: 50% 50%;
+  transition: all 0.2s;
+}
+.social-link .social-svg:hover .social-group__icon, .social-link .social-svg:active .social-group__icon, .social-link .social-svg:focus .social-group__icon {
+  fill: #FFFBFA;
+  transition: all 0.45s;
+}
+.social-link .social-svg:hover .social-group__inner-circle, .social-link .social-svg:active .social-group__inner-circle, .social-link .social-svg:focus .social-group__inner-circle {
+  fill: currentColor;
+  transition: all 0.45s;
+}
+.social-link .social-svg:hover .social-group__inner-circle--linkedin, .social-link .social-svg:active .social-group__inner-circle--linkedin, .social-link .social-svg:focus .social-group__inner-circle--linkedin {
+  fill: url(#simpleLinkedin) !important;
+}
+.social-link .social-svg:hover .social-group__inner-circle--instagram, .social-link .social-svg:active .social-group__inner-circle--instagram, .social-link .social-svg:focus .social-group__inner-circle--instagram {
+  fill: url(#simpleInsta) !important;
+}
+.social-link .social-svg:hover .social-group__outline, .social-link .social-svg:active .social-group__outline, .social-link .social-svg:focus .social-group__outline {
+  stroke: currentColor;
+  transform: scale(1.1);
+  transition: all 0.45s;
+}
+
+.footer-home {
+  background-image: linear-gradient(to bottom right, red, orange);
+}
+
+.footer-client {
+  background-image: linear-gradient(to bottom right, rgb(19, 19, 197), cyan);
+}
+
+.footer-container {
+  padding: 2rem 0 1.5rem 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+@media screen and (max-width: 1021px) {
+  #evil-button {
+    display: none;
+  }
+}
+/* Desktop to tablet - Check standard sizes */
+@media screen and (max-width: 915px) {
+  body {
+    overflow-x: hidden;
+  }
+  #intro-block-red {
+    width: 100%;
+    padding: 2rem 0 4rem 0;
+  }
+  .landing-content {
+    display: flex;
+    padding: 2rem 0 2rem 0;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+  }
+}
+/* Desktop to mobile - Check standard sizes */
+@media screen and (max-width: 775px) {
+  #intro-block-blue {
+    width: 100%;
+    padding: 2rem 0 4rem 0;
+  }
+  .section-main-client {
+    flex-direction: column;
+  }
+}

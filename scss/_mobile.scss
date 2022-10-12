@@ -1,0 +1,43 @@
+// Media query collection for mobile devices
+
+@media screen and (max-width: 1021px) {
+    #evil-button {
+        display: none;
+    }
+}
+
+/* Desktop to tablet - Check standard sizes */
+@media screen and (max-width: 915px) {
+
+    body {
+        overflow-x: hidden;
+    }
+
+    #intro-block-red {
+        width: 100%;
+        padding: 2rem 0 4rem 0;
+    }
+
+    .landing-content {
+        display: flex;
+        padding: 2rem 0 2rem 0;
+        width: 100%;
+        align-items: center;
+        justify-content: center;
+    }
+    
+}
+
+/* Desktop to mobile - Check standard sizes */
+@media screen and (max-width: 775px) {
+
+    #intro-block-blue {
+        width: 100%;
+        padding: 2rem 0 4rem 0;
+    }
+
+    .section-main-client {
+        flex-direction: column;
+    }
+    
+}

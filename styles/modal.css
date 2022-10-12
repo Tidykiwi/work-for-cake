@@ -11,13 +11,30 @@
     overflow: auto; /* Enable scroll if needed */
     background-size: cover;
     background-color: rgb(0,0,0); /* Fallback color */
-    background-color: rgb(178, 34, 34, 0.9); /* Black w/ opacity */
-  }
+}
+
+.modal-home {
+  background-color: rgb(178, 34, 34, 0.85); /* Black w/ opacity */
+}
   
+.modal-client {
+  background-color: rgb(20, 20, 126, 0.85); /* Blue w/ opacity */
+}
+
+.modal-interest {
+  background-color: rgb(53, 53, 53, 0.9); /* Black w/ opacity */
+}
+
+.modal-about {
+  background-color: rgb(20, 20, 126, 0.85); /* Blue w/ opacity */
+}
+
   /* Modal Content */
   .modal-content {
     position: relative;
     background-color: #f5f5f5;
+   /*background-image: url("../images/web-development.jpg");
+    background-size: cover;*/
     margin: auto;
     padding: 0 0 4rem 0;
     border: 5px solid #8B0000;

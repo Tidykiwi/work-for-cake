@@ -1,0 +1,36 @@
+// Buttons are a good example of how you can use inheritance 
+
+// Start with base properties shared by all buttons 
+%btn {
+    display: inline-block;
+    border-radius: 5px;
+    padding: 8px 20px;
+    margin: 3px;
+
+    &:hover {
+        transform: scale(.98);
+    }
+}
+
+// These shared properties/values can then be used by other elements 
+.btn-primary {
+    @extend %btn;
+    background-color: lighten($primary-color, 10%); // Syntax for lighten/darken function 
+}
+
+// Example of above (primary) button using set-background mixin 
+.btn-primary-mixin-example {
+    @extend %btn;
+    @include set-background(lighten($primary-color, 10%));
+}
+
+.btn-secondary {
+    @extend %btn;
+    background-color: $secondary-color;
+}
+
+// Example of above (secondary) button using set-background mixin 
+.btn-secondary-mixin-example {
+    @extend %btn;
+    @include set-background($secondary-color);
+}
