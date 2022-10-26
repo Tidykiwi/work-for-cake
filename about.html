@@ -29,9 +29,27 @@
 </head>
 <body id="body-about">
 
-    <section class="main-section">
+    <section class="cake-section">
 
-        <div class="intro-block" id="intro-block-blue">
+        <div>
+            <h1>Enough about you... LET'S TALK ABOUT ME!!!</h1>
+        </div>
+
+        <div class="about-content">
+            <!-- Open the Modal -->
+            <div class="circle-background" id="modal-button"> 
+              <div class="explore-circle">
+                <div class="circle-logo">
+                  <div class="circle-logo-inner"></div>
+                </div>
+                <div class="circle-text">
+                  <p>EXPLORE &#x2605 EXPLORE &#x2605 EXPLORE &#x2605</p>
+                </div>
+              </div>  
+            </div>
+          </div>
+
+        <div class="intro-block" id="intro-block-red">
             <div class="keep-calm-intro">
                 <div class="keep-calm-intro-image">
                     <img id="keep-calm-crown-intro" src="images/keep-calm-crown.png">
@@ -57,25 +75,7 @@
               <a href="index.html"><button class="button" id="home-button">Home</button></a>
           </div>
         </div>
-
-        <div>
-            <h1>Enough about you... LET'S TALK ABOUT ME!!!</h1>
-        </div>
-
-
-        <div class="content-container">
-            <h1>Testimonials</h1>
-            <img class="test-image" src="images/alice.jpg">
-            <h3>Alice says...</h3>
-            <p>Gosh! What a really great developer Ross is. Such good work... and so professional and polite!</p>
-            <img class="test-image" src="images/bob.jpg">
-            <h3>Bob says...</h3>
-            <p>I was in the quite the pickle until Ross helped me out. I don't know where I would be without him!</p>
-            <img class="test-image"src="images/claire.jpg">
-            <h3>Claire says...</h3>
-            <p>I'll definitely call Ross again if I ever need any more web or software development help!</p>
-
-        </div>
+    </section>
 
     <!-- The Modal -->
     <section id="container-modal" class="modal modal-about">
@@ -102,6 +102,14 @@
         </div>
     </section>
 
-</section>
+    <!-- Rotate Text Circle -->
+    <script>
+        const text = document.querySelector('.circle-text p')
+        text.innerHTML = text.innerText.split("").map(
+        (char, i) =>
+            `<span style="transform:rotate(${i * 12}deg)">${char}</span>`
+        ).join("")
+    </script>
+
 </body>
 </html>
