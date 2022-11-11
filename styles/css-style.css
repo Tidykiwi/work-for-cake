@@ -36,14 +36,14 @@ body {
     display: flex;
     flex-direction:column;
     justify-content: space-between;
-    gap: 40px;
+    gap: 3rem;
     align-items: center;
     min-width: 30%;
     height: auto;
-    padding: 2rem 0 2rem 0;
+    padding: 2rem 0 4rem 0;
 }
 
-#intro-block-red {
+.intro-block-red {
     background-color: rgb(183, 11, 11);
 }
 
@@ -200,17 +200,22 @@ main {
     border: solid 1px rgb(53, 53, 53);
     border-radius: 5px;
     font-size: medium;
-    font-weight: bold;
-    letter-spacing: 2px;
+    font-weight: 700;
+    letter-spacing: 1px;
     color:#e0fbfc;
     background-color:#5c6b73;
     box-shadow: 1px 2px 4px rgba(0,0,0,0.2);
   }
 
 .button:hover {
-    scale: 1.01;    
+    scale: 1.02;    
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
     cursor: pointer;
+}
+
+.explore-button-home {
+    background-color: white;
+    color: red;
 }
 
 a {
@@ -240,96 +245,6 @@ h1 {
     scale: 1.01;    
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
 
-}
-
-.client-container {
-    height: auto;
-    padding: 3rem;
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    justify-content: space-around;
-}
-
-.client-container-text {
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-}
-
-.client-block {
-    width: 100%;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 3rem;
-}
-
-.client-card {
-    height: 100%;
-}
-
-.testimonial-container {
-    background-color: #e0fbfc;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 3rem;
-}
-
-.testimonial-container h1 {
-    font-size: 40px;
-    padding-bottom: 2rem;
-}
-
-.testimonial-block {
-    width: 100%;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 5rem;
-}
-
-.testimonial-card {
-    width: 300px;
-    height: 100%;
-    background-color: aqua;
-    border-radius: 10px;
-    box-shadow: 1px 2px 4px rgba(0,0,0,0.2);
-}
-
-.testimonial-card-top {
-    width: 100%;
-    height: 300px;
-    background-size: cover;
-    border-top-left-radius: 10px;
-    border-top-right-radius: 10px;
-}
-
-.testimonial-card-bottom {
-    padding: 1rem;
-}
-
-.alice-card {
-    background-image: url("../images/alice.jpg");
-    background-position: -2.5rem;
-}
-
-.bob-card {
-    background-image: url("../images/bob.jpg");
-}
-
-.claire-card {
-    background-image: url("../images/claire.jpeg");   
-}
-
-.testimonial-image {
-    width: 100%;
-    height: 300px;
-    border-top-left-radius: 10px;
-    border-top-right-radius: 10px;
 }
 
 .content-container {
@@ -433,4 +348,168 @@ h1 {
 
 .nav-modal-image {
     max-width: 90%;
+}
+
+/* Client Page - Client Section */
+.client-section {
+    background-image: linear-gradient(to bottom right, rgb(19, 19, 197), white);
+}
+
+.client-container {
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    padding: 4rem 3rem 5rem 3rem;
+}
+
+.client-container h1 {
+    font-size: 40px;
+    padding-bottom: 3rem;
+}
+
+.client-container-text {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+.client-block {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 3rem;
+}
+
+.client-card {
+    height: 100%;
+}
+
+/* Client Page - Testimonial Section */
+.testimonial-section {
+    background-image: linear-gradient(to bottom right, rgb(19, 19, 197), white);
+}
+
+.testimonial-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 4rem 3rem 5rem 3rem;
+}
+
+.testimonial-container h1 {
+    font-size: 40px;
+    padding-bottom: 3rem;
+}
+
+.testimonial-block {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 3rem;
+}
+
+/* Testimonial card hover effect */
+.view {
+    width: 300px;
+    height: 300px;
+    margin: 10px;
+    float: left;
+    border: 10px solid #fff;
+    overflow: hidden;
+    position: relative;
+    text-align: center;
+    border-radius: 20px;
+    box-shadow: 1px 2px 4px rgba(0,0,0,0.2);
+    cursor: default;
+    background-image: linear-gradient(to bottom right, #e0fbfc, rgb(155, 155, 239));
+}
+
+.view:hover {
+    /*scale: 1.02;*/    
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+}
+
+.view .mask, .view .testimonial-content {
+    width: 280px;
+    height: 280px;
+    position: absolute;
+    overflow: hidden;
+    top: 0;
+    left: 0;
+}
+
+.view img {
+    display: block;
+    position: relative;
+    width: 100%;
+    transform: scaleY(1);
+	transition: all 0.7s ease-in-out;
+}
+.view h2 {
+    text-transform: uppercase;
+    color: #fff;
+    text-align: center;
+    position: relative;
+    font-size: 22px;
+    padding: 10px;
+    background: rgba(0, 0, 0, 0.8);
+    margin: 20px 0 0 0
+}
+.view p {
+    font-family: Georgia, serif;
+    font-style: italic;
+    font-size: 20px;
+    position: relative;
+    color: #fff;
+    padding: 10px 20px 20px;
+    text-align: center
+}
+
+.view-testimonial img { 
+	transform: scaleY(1);
+	transition: all 0.7s ease-in-out;
+}
+
+.view-testimonial:hover img { 
+	transform: scale(10);
+    opacity: 0;
+}	
+
+.view-testimonial .mask { 
+    background-color: rgba(255, 231, 179, 0.3); 
+    transition: all 0.5s linear;
+    opacity: 0;
+}	
+
+.view-testimonial:hover .mask { 
+	opacity: 1;
+}
+
+.view-testimonial h2{
+    border-bottom: 1px solid rgba(0, 0, 0, 0.3);
+    background: transparent;
+    margin: 20px 40px 0px 40px;
+    transform: scale(0);
+    color: #333;
+    transition: all 0.5s linear;
+    opacity: 0;
+}
+.view-testimonial p {
+    color: #333;
+    opacity: 0;
+    transform: scale(0);
+    transition: all 0.5s linear;
+    padding: 2.5rem;
+}
+
+.view-testimonial:hover h2,
+.view-testimonial:hover p { 
+    transform: scale(1);
+    opacity: 1;
 }

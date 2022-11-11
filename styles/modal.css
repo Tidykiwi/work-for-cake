@@ -47,6 +47,14 @@
     animation-duration: 0.5s
   }
 
+  .modal-content-client {
+    border: 5px solid rgb(5, 5, 82);
+  }
+
+  .modal-content-interest {
+    border: 5px solid black;
+  }
+
   /* Add Animation */
   @-webkit-keyframes animatetop {
     from {top:-300px; opacity:0} 
@@ -97,22 +105,6 @@
     align-items: center;
     height: 3rem;
   }
-
-  /* The Close Button */
-  .close-modal {
-    color: #3c6e71;
-    float: right;
-    font-size: 50px;
-    font-weight:600;
-    margin: 0 10px 0 0;
-  }
-  
-  .close-modal:hover,
-  .close-modal:focus {
-    color: #353535;
-    text-decoration: none;
-    cursor: pointer;
-  }
   
 .material-icons {
   color: #3c6e71;
@@ -122,9 +114,45 @@
 
 .material-icons:hover,
 .material-icons:focus {
-  color: #353535;
+  color: #8B0000;
   text-decoration: none;
   cursor: pointer;
+}
+
+.material-icons-client:hover,
+.material-icons-client:focus {
+  color: rgb(5, 5, 82);
+}
+
+.material-icons-interest:hover,
+.material-icons-interest:focus {
+  color: black;
+}
+
+/* The Close Button */
+.modal-close {
+  color: #3c6e71;
+  float: right;
+  font-size: 50px;
+  font-weight:600;
+  margin: 0 10px 0 0;
+}
+
+.modal-close:hover,
+.modal-close:focus {
+  color: #8B0000;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.modal-close-client:hover,
+.modal-close-client:focus {
+  color: rgb(5, 5, 82);
+}
+
+.modal-close-interest:hover,
+.modal-close-interest:focus {
+  color: black;
 }
 
 .modal-body {
