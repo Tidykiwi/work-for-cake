@@ -7,17 +7,16 @@
     
 body {
     font-family: Arial, Helvetica, sans-serif;
-    background-image: url("../images/web-development.jpg");
     background-size: cover;
     overflow-x: hidden;
 }
 
 #body-home {
-    background-image: linear-gradient(to bottom right, red, yellow);
+    background-color: rgb(183, 11, 11);
 }
 
 #body-client {
-    background-image: linear-gradient(to bottom right, blue, #e0fbfc);
+    background-image: linear-gradient(to bottom right, rgb(20, 20, 126), blue, #e0fbfc);
 }
 
 #body-about {
@@ -40,7 +39,6 @@ body {
     align-items: center;
     min-width: 30%;
     height: auto;
-    padding: 2rem 0 4rem 0;
 }
 
 .intro-block-red {
@@ -73,6 +71,11 @@ body {
     line-height: 1;
     letter-spacing: 0.10rem;
     color: white;
+}
+
+.keep-calm-intro-text > p:nth-child(3) {
+    font-size: 35px;
+    padding: 0.5rem 0;
 }
 
 .main-section > div.intro-block-red > div.keep-calm-intro > div.keep-calm-intro-text > p:nth-child(3), 
@@ -197,7 +200,6 @@ main {
 
 .button {
     padding: 1rem 1rem 1rem 1rem;
-    border: solid 1px rgb(53, 53, 53);
     border-radius: 5px;
     font-size: medium;
     font-weight: 700;
@@ -213,9 +215,16 @@ main {
     cursor: pointer;
 }
 
-.explore-button-home {
+.button:hover p {
+    scale: 1.05;    
+}
+
+.nav-button {
     background-color: white;
-    color: red;
+}
+.nav-button-home {
+    color: rgb(183, 11, 11);
+    border: solid 1px rgb(183, 11, 11);
 }
 
 a {
@@ -224,6 +233,10 @@ a {
 
 h1 {
     color: #353535;
+}
+
+.card-container {
+    padding: 1rem 1rem 1rem 1rem;
 }
 
 .card {
@@ -328,38 +341,23 @@ h1 {
     flex-wrap: wrap;
 }
 
-.card-container {
-    padding: 1rem 1rem 1rem 1rem;
-}
-
 .client-image,
 .interest-image {
     max-width: 90%;
 }
 
-#evil-button {
-    position: absolute;
-    transform: translate(-50%, -50%);
-    white-space: nowrap;
-    width: 200px;
-    border-radius: 5px;
-    border: none;
-    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);}
-
 .nav-modal-image {
     max-width: 90%;
 }
 
-/* Client Page - Client Section */
+/* ---------- Client Page - Client Section ------------ */
 .client-section {
-    background-image: linear-gradient(to bottom right, rgb(19, 19, 197), white);
+    background-image: linear-gradient(to bottom right, rgb(19, 19, 197), lightblue, white);
 }
 
 .client-container {
-    height: auto;
     display: flex;
     flex-direction: column;
-    flex-wrap: wrap;
     align-items: center;
     padding: 4rem 3rem 5rem 3rem;
 }
@@ -384,13 +382,25 @@ h1 {
     gap: 3rem;
 }
 
+.client-card-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+}
+
 .client-card {
     height: 100%;
 }
 
-/* Client Page - Testimonial Section */
+.client-button {
+    background-color: rgb(20, 20, 126);
+    border: solid 1px rgb(20, 20, 126);
+}
+
+/* ---------- Client Page - Testimonial Section ---------- */
 .testimonial-section {
-    background-image: linear-gradient(to bottom right, rgb(19, 19, 197), white);
+    background-image: linear-gradient(to top right, rgb(19, 19, 197), lightblue, white);
 }
 
 .testimonial-container {
@@ -452,7 +462,6 @@ h1 {
 	transition: all 0.7s ease-in-out;
 }
 .view h2 {
-    text-transform: uppercase;
     color: #fff;
     text-align: center;
     position: relative;
@@ -508,8 +517,31 @@ h1 {
     padding: 2.5rem;
 }
 
+.view-testimonial button {
+    opacity: 0;
+    transform: scale(0);
+    transition: all 0.5s linear;
+}
+
 .view-testimonial:hover h2,
-.view-testimonial:hover p { 
+.view-testimonial:hover p,
+.view-testimonial:hover button { 
     transform: scale(1);
     opacity: 1;
+}
+
+
+/* ---------- Client Page - Cake Section ---------- */
+
+.nav-button-client {
+    color:rgb(20, 20, 126);
+    border: solid 1px rgb(20, 20, 126);
+}
+
+
+/* ---------- Interest Page ------------ */
+
+.nav-button-interest {
+    color: black;
+    border: solid 1px black;
 }
