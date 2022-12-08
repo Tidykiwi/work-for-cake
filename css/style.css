@@ -130,6 +130,22 @@
   height: 600px;
 }
 
+.footer-home {
+  background-image: linear-gradient(to bottom right, red, orange);
+}
+
+.footer-client {
+  background-image: linear-gradient(to bottom right, rgb(19, 19, 197), white);
+}
+
+.footer-container {
+  padding: 2rem 0 1.5rem 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
 .social-icons-wrapper {
   display: flex;
   justify-content: space-around;
@@ -145,24 +161,18 @@
   width: 70%;
 }
 
-.social-link {
-  cursor: pointer;
-}
 .social-link--linkedin {
   color: #2d76b0;
 }
 .social-link--github {
   color: #000;
 }
-.social-link--instagram {
-  color: #9a2970;
-}
 .social-link .social-svg {
   width: 4.8rem;
   height: 4.8rem;
 }
 .social-link .social-svg .social-group__icon {
-  fill: rgb(183, 11, 11);
+  fill: #FFFBFA;
   transition: all 0.2s;
 }
 .social-link .social-svg .social-group__inner-circle {
@@ -170,7 +180,7 @@
   transition: all 0.2s;
 }
 .social-link .social-svg .social-group__outline {
-  stroke: rgb(183, 11, 11);
+  stroke: #FFFBFA;
   transform-origin: 50% 50%;
   transition: all 0.2s;
 }
@@ -185,29 +195,10 @@
 .social-link .social-svg:hover .social-group__inner-circle--linkedin, .social-link .social-svg:active .social-group__inner-circle--linkedin, .social-link .social-svg:focus .social-group__inner-circle--linkedin {
   fill: url(#simpleLinkedin) !important;
 }
-.social-link .social-svg:hover .social-group__inner-circle--instagram, .social-link .social-svg:active .social-group__inner-circle--instagram, .social-link .social-svg:focus .social-group__inner-circle--instagram {
-  fill: url(#simpleInsta) !important;
-}
 .social-link .social-svg:hover .social-group__outline, .social-link .social-svg:active .social-group__outline, .social-link .social-svg:focus .social-group__outline {
   stroke: currentColor;
   transform: scale(1.1);
   transition: all 0.45s;
-}
-
-.footer-home {
-  background-image: linear-gradient(to bottom right, red, orange);
-}
-
-.footer-client {
-  background-image: linear-gradient(to bottom right, rgb(19, 19, 197), white);
-}
-
-.footer-container {
-  padding: 2rem 0 1.5rem 0;
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
 }
 
 /* Desktop to tablet - Check standard sizes */

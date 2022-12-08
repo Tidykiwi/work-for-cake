@@ -1,3 +1,4 @@
+// Styling for Github and Linkedin links
 .social-icons-wrapper {
     display: flex;
     justify-content: space-around;
@@ -24,10 +25,6 @@
       color: #000;
     }
   
-    &--instagram {
-      color: #9a2970;
-    }
-  
     & .social-svg {
       width: 4.8rem;
       height: 4.8rem;
@@ -45,7 +42,7 @@
         }
   
         &__outline {
-          stroke: $color-red;
+          stroke: $color-white;
           transform-origin: 50% 50%;
           transition: all .2s;
         }
@@ -67,10 +64,6 @@
   
             &--linkedin {
               fill: url(#simpleLinkedin) !important;
-            }
-  
-            &--instagram {
-              fill: url(#simpleInsta) !important;
             }
           }
   
