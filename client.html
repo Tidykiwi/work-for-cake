@@ -20,8 +20,6 @@
     <link rel="stylesheet" href="css/style.css">
     <!-- Google Fonts -->
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
-    <!-- Navigation Modal -->
-    <script defer src="scripts/nav-modal.js" charset="utf-8"></script>
 </head>
 <body id="body-client">
 
@@ -29,10 +27,10 @@
     <div class="intro-block py-5" id="intro-block-blue">
       <div class="keep-calm-intro">
         <div class="keep-calm-intro-image">
-          <img id="keep-calm-crown-intro" src="images/keep-calm-crown.png">
+          <a href="index.html" title="Home"><img id="keep-calm-crown-intro" src="images/keep-calm-crown.png"></a>
         </div>
         <div class="keep-calm-intro-text">
-          <p>CLIENT PROJECTS</p>
+          <p>ACTUAL PROJECTS</p>
         </div>
       </div>
       <div id="intro-block-welcome-text">
@@ -41,9 +39,10 @@
         <p>&#x2605 &#x2605 &#x2605</p>
       </div>
       <div class="nav-container" id="client-nav-container">
-        <!-- Open the Modal --> 
-        <button class="button nav-button nav-button-client" id="modal-button"><p>EXPLORE</p></button>
-        <a href="index.html"><button class="button nav-button nav-button-client" id="home-button"><p>HOME</p></button></a>
+        <!-- Open the Modal -->
+        <a href="interest.html"><button class="button nav-button nav-button-client"><p>WORKSHOP</p></button></a>
+        <a href="about.html"><button class="button nav-button nav-button-client"><p>ABOUT</p></button></a>
+        <a href="index.html"><button class="button nav-button nav-button-client"><p>HOME</p></button></a>
 
       </div>
     </div>
@@ -56,37 +55,37 @@
           <h1>They are the means by which your vision becomes real!</h1>
         </div> -->
         <div class="client-block">
-          <div class="view view-testimonial view-client">
+          <div class="view view-project-card view-client">
             <img src="images/client-trents.jpg" />
-            <div class="testimonial-mask"></div>
-            <div class="testimonial-content">
+            <div class="project-card-mask"></div>
+            <div class="project-card-content">
               <h2>Trents Estate</h2>
               <p>Built a new wedding venue site in <strong>WordPress.</strong></p>
               <a href="https://www.trentsvineyard.co.nz/" target="_blank" ><button class="button client-button" id="trents-button">VISIT</button></a>
             </div>
           </div>
-          <div class="view view-testimonial view-client">
+          <div class="view view-project-card view-client">
             <img src="images/client-networkz.png" />
-            <div class="testimonial-mask"></div>
-            <div class="testimonial-content">
+            <div class="project-card-mask"></div>
+            <div class="project-card-content">
               <h2>NetworkZ</h2>
               <p>Implemented site-wide responsiveness in <strong>Webflow.</strong></p>
               <a href="https://www.networkz.ac.nz/" target="_blank" ><button class="button client-button" id="networkZ-button">VISIT</button></a>
             </div>
           </div>
-          <div class="view view-testimonial view-client">
+          <div class="view view-project-card view-client">
             <img src="images/client-bnzfs-2.jpg" />
-            <div class="testimonial-mask"></div>
-            <div class="testimonial-content">
+            <div class="project-card-mask"></div>
+            <div class="project-card-content">
               <h2>BNZFS</h2>
               <p>Co-developed a new site in <strong>Webflow.</strong></p>
               <a href="https://www.bnzfs.webflow.io/" target="_blank" ><button class="button client-button" id="bnzfs-button">VISIT</button></a>
             </div>
           </div>
-          <div class="view view-testimonial view-client">
+          <div class="view view-project-card view-client">
             <img src="images/client-cenic-2.jpg" />
-            <div class="testimonial-mask"></div>
-            <div class="testimonial-content">
+            <div class="project-card-mask"></div>
+            <div class="project-card-content">
               <h2>CENIC</h2>
               <p>Built a new site in <strong>Webflow.</strong></p>
               <a href="https://cenic-ef0e2b.webflow.io/" target="_blank" ><button class="button client-button" id="cenic-button">VISIT</button></a>
@@ -100,7 +99,7 @@
       <div class="intro-block py-5" id="intro-block-blue">
         <div class="keep-calm-intro">
           <div class="keep-calm-intro-image">
-            <img id="keep-calm-crown-intro" src="images/keep-calm-crown.png">
+            <a href="index.html" title="Home"><img id="keep-calm-crown-intro" src="images/keep-calm-crown.png"></a>
           </div>
           <div class="keep-calm-intro-text">
             <p>KEEP</p> 
@@ -156,31 +155,6 @@
         </div>       
       </div>
 
-      </div>
-    </section>
-
-    <!-- The Modal -->
-    <section id="container-modal" class="modal modal-client">
-      <div class="modal-content modal-content-client">
-        <div class="modal-header"> 
-          <a href="index.html">
-            <i class="material-icons material-icons-client">&#xe88a;</i>
-          </a>
-          <span class="modal-close modal-close-client">&times;</span>
-        </div>
-        <div class="modal-body">
-          <div id="container-projects">
-            <div class="nav-card-container">
-              <a href="client.html"><button class="card" id="project-card"><img class="nav-modal-image" id="nav-modal-money" src="images/cash-money-icon.png"><h2>Client Projects</h2></button></a>
-            </div>
-            <div class="nav-card-container">
-              <a href="interest.html"><button class="card" id="project-card"><img class="nav-modal-image" id="nav-modal-heart" src="images/heart-icon.png"><h2>Showcase Projects</h2></button></a>
-            </div>
-            <div class="nav-card-container">
-              <a href="about.html"><button class="card" id="project-card"><img class="nav-modal-image" id="nav-modal-lion" src="images/lion-eating.webp"><h2>About Me</h2></button></a>
-            </div>           
-          </div>
-        </div>
       </div>
     </section>
 

@@ -11,7 +11,8 @@ body {
     overflow-x: hidden;
 }
 
-#body-home {
+#body-home,
+#body-about {
     background-color: rgb(183, 11, 11);
 }
 
@@ -19,16 +20,10 @@ body {
     background-image: linear-gradient(to bottom right, rgb(20, 20, 126), blue, #e0fbfc);
 }
 
-#body-about {
-    background-image: linear-gradient(to bottom right, red, yellow);
-}
-
 .about-content {
-    display: flex;
-    width: 100%;
-    height: 90vh;
-    align-items: center;
-    justify-content: center;
+    position: absolute;
+    bottom: -180px;
+    left: 0;
 }
 
 .intro-block {
@@ -50,7 +45,12 @@ body {
 }
 
 #intro-block-black {
-    background-color: black;
+    background-color: rgb(72, 71, 71);
+}
+
+#intro-block-sun {
+    position: relative;
+    background-image: linear-gradient(to bottom left, red, orange, yellow, white);
 }
 
 .keep-calm-intro {
@@ -77,12 +77,6 @@ body {
 .keep-calm-intro-text > p:nth-child(3) {
     font-size: 35px;
     padding: 0.5rem 0;
-}
-
-.main-section > div.intro-block-red > div.keep-calm-intro > div.keep-calm-intro-text > p:nth-child(3), 
-.main-section > div.intro-block-blue > div.keep-calm-intro > div.keep-calm-intro-text > p:nth-child(3) {
-    font-size: xx-large;
-    margin: 1rem 0 1rem 0;
 }
 
 #intro-block-welcome-text {
@@ -221,6 +215,7 @@ main {
 }
 
 .nav-button {
+    width: 9rem;
     background-color: white;
 }
 .nav-button-home {
@@ -261,12 +256,7 @@ h1 {
 
 }
 
-.content-container {
-    background-color: #e0fbfc;
-    border-radius: 15px;
-    border: solid 10px #9db4c0;
-    padding: 2rem 2rem 2rem 2rem;
-}
+
 
 .container-intro-flex {
     padding: 2.5% 2.5% 2.5% 2.5%;
@@ -287,43 +277,15 @@ h1 {
     background-color: #c2dfe3;
 }
 
-#intro-flex-item-2 {
-    grid-column: 2 / span 1;
-    border-radius: 10px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    background-color: #9db4c0;
-    padding: 5% 5% 2.5% 5%;
-}
-
-.palette-div {
-    background-color: #fff;
-    border-radius: 7.5px;
-    margin: 0.5rem 0 0.5rem 0;
-}
-
-.palette-spread {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    height: 100px;
-    width: 90%;
-    padding: 0.5rem 0 0.5rem 0;
-}
-
-#tool-set {
-    width: 50%;
-}
-
 .nav-container {
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
     justify-content: center;
-    gap: 25px;
+    gap: 30px;
 }
 
-#interest-content {
+.interest-block {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -346,7 +308,7 @@ h1 {
     max-width: 90%;
 }
 
-/* ---------- Client Page - Client Section ------------ */
+/* ---------- Client Page ------------ */
 .client-section {
     background-image: linear-gradient(to bottom right, rgb(19, 19, 197), lightblue, white);
 }
@@ -387,148 +349,6 @@ h1 {
     border: solid 1px rgb(20, 20, 126);
 }
 
-/* ---------- Client Page - Testimonial Section ---------- */
-.testimonial-section {
-    background-image: linear-gradient(to top right, rgb(19, 19, 197), lightblue, white);
-}
-
-.testimonial-container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 4rem 3rem 5rem 3rem;
-}
-
-.testimonial-container h1 {
-    font-size: 40px;
-    padding-bottom: 3rem;
-}
-
-.testimonial-block {
-    width: 100%;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 3rem;
-}
-
-/* Testimonial card hover effect */
-.view {
-    width: 300px;
-    height: 300px;
-    margin: 10px;
-    float: left;
-    border: 10px solid #fff;
-    overflow: hidden;
-    position: relative;
-    text-align: center;
-    border-radius: 20px;
-    box-shadow: 1px 2px 4px rgba(0,0,0,0.2);
-    cursor: default;
-}
-
-.view-client {
-    background-image: linear-gradient(to bottom right, #e0fbfc, rgb(155, 155, 239));
-}
-
-.view-interest {
-    background-image: linear-gradient(to bottom right, #e0fbfc, grey);
-}
-
-.view:hover {
-    /*scale: 1.02;*/    
-    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
-}
-
-.view .mask, .view .testimonial-content {
-    width: 280px;
-    height: 280px;
-    position: absolute;
-    overflow: hidden;
-    top: 0;
-    left: 0;
-}
-
-.view img {
-    display: block;
-    position: relative;
-    width: 100%;
-    transform: scaleY(1);
-	transition: all 0.7s ease-in-out;
-}
-.view h2 {
-    color: #fff;
-    text-align: center;
-    position: relative;
-    font-size: 22px;
-    padding: 10px;
-    background: rgba(0, 0, 0, 0.8);
-    margin: 20px 0 0 0
-}
-.view p {
-    font-family: Georgia, serif;
-    font-style: italic;
-    font-size: 20px;
-    position: relative;
-    color: #fff;
-    padding: 10px 20px 20px;
-    text-align: center
-}
-
-.view-testimonial img { 
-	transform: scaleY(1);
-	transition: all 0.7s ease-in-out;
-}
-
-.view-testimonial:hover img { 
-	transform: scale(10);
-    opacity: 0;
-}	
-
-.view-testimonial .mask { 
-    background-color: rgba(255, 231, 179, 0.3); 
-    transition: all 0.5s linear;
-    opacity: 0;
-}	
-
-.view-testimonial:hover .mask { 
-	opacity: 1;
-}
-
-.view-testimonial h2{
-    border-bottom: 1px solid rgba(0, 0, 0, 0.3);
-    background: transparent;
-    margin: 20px 40px 0px 40px;
-    transform: scale(0);
-    color: #333;
-    transition: all 0.5s linear;
-    opacity: 0;
-}
-.view-testimonial p {
-    color: #333;
-    opacity: 0;
-    transform: scale(0);
-    transition: all 0.5s linear;
-    padding: 2.5rem;
-}
-
-.view-testimonial button {
-    opacity: 0;
-    transform: scale(0);
-    transition: all 0.5s linear;
-}
-
-.view-testimonial:hover h2,
-.view-testimonial:hover p,
-.view-testimonial:hover button { 
-    transform: scale(1);
-    opacity: 1;
-}
-
-
-/* ---------- Client Page - Cake Section ---------- */
-
 .nav-button-client {
     color:rgb(20, 20, 126);
     border: solid 1px rgb(20, 20, 126);
@@ -536,8 +356,55 @@ h1 {
 
 
 /* ---------- Interest Page ------------ */
+.interest-section {
+    background-image: linear-gradient(to bottom right, rgb(19, 19, 197), lightblue, white);
+}
+
+.interest-container {
+    background-color: #e0fbfc;
+    border-radius: 15px;
+    border: solid 10px #9db4c0;
+    padding: 2rem 2rem 2rem 2rem;
+}
+
+.palette-container {
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #9db4c0;
+}
+
+.palette-container-test {
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.palette-block {
+    background-color: #fff;
+    border-radius: 7.5px;
+    margin: 0.3rem 0;
+}
+
+.palette-spread {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    height: 75px;
+    padding: 0.25rem;
+}
 
 .nav-button-interest {
     color: black;
     border: solid 1px black;
+}
+
+/* ---------- About Page ------------ */
+
+.story-section {
+    height: 450px;
+    background-image: linear-gradient(to bottom right, white, yellow, orange, red);
 }

@@ -10,24 +10,33 @@
     #intro-block-red {
         width: 100%;
         padding: 2rem 0 4rem 0;
-    }
-
-    .about-content {
-        display: flex;
-        padding: 2rem 0 2rem 0;
-        width: 100%;
-        align-items: center;
-        justify-content: center;
-    }
-    
+    }   
 }
 
-/* Desktop to mobile - Check standard sizes */
+/* Desktop to mobile landscape - Check standard sizes */
 @media screen and (max-width: 775px) {
 
     #intro-block-blue {
         width: 100%;
         padding: 2rem 0 4rem 0;
     }
-    
+
+    .about-content {
+        position: static;
+        display: flex;
+        padding: 2rem 0 2rem 0;
+        width: 100%;
+        align-items: center;
+        justify-content: center;
+    }
+
+}
+
+/* Mobile landscape to Mobile Portrait - Check standard sizes */
+@media screen and (max-width: 400px) {
+
+    .nav-container {
+        flex-direction: column;
+    }
+
 }

@@ -5,11 +5,11 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
-    <title>Interest Projects</title>
+    <title>Workshop Projects</title>
     <meta name="description" content="A website to showcase my web development experience and ability">
     <meta name="author" content="Work for Cake">
     
-    <meta property="og:title" content="Interest Projects">
+    <meta property="og:title" content="Workshop Projects">
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://tidykiwi.github.io/work-for-cake/interest.html/">
     <meta property="og:description" content="A website to showcase my web development experience and ability.">
@@ -21,7 +21,6 @@
 
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
 
-    <script defer src="scripts/nav-modal.js" charset="utf-8"></script>
     <script defer src="scripts/change-palette.js" charset="utf-8"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.js"></script>
 </head>
@@ -31,106 +30,119 @@
         <div class="intro-block py-5" id="intro-block-black">
             <div class="keep-calm-intro">
                 <div class="keep-calm-intro-image">
-                    <img id="keep-calm-crown-intro" src="images/keep-calm-crown.png">
+                  <a href="index.html" title="Home"><img id="keep-calm-crown-intro" src="images/keep-calm-crown.png"></a>
                 </div>
                 <div class="keep-calm-intro-text">
-                    <p>SHOWCASE PROJECTS</p>
+                    <p>WORKSHOP PROJECTS</p>
                 </div>
             </div>
             <div id="intro-block-welcome-text">
                 <p>&#x2605 &#x2605 &#x2605</p> 
-                <p>WORK FOR CAKE</p>
+                <p>WELCOME TO THE WORKSHOP</p>
                 <p>&#x2605 &#x2605 &#x2605</p>
-                <!-- <p>&#x2605 I invite you to explore my site &#x2605</p> -->
             </div>
-            <div class="nav-container" id="client-nav-container">
-              <!-- Open the Modal --> 
-              <button class="button nav-button nav-button-interest" id="modal-button">EXPLORE</button>
-              <a href="index.html"><button class="button nav-button nav-button-interest" id="home-button">HOME</button></a>
+            <div class="nav-container px-4" id="client-nav-container">
+              <a href="client.html"><button class="button nav-button nav-button-interest"><p>REALITY</p></button></a>
+              <a href="about.html"><button class="button nav-button nav-button-interest"><p>ABOUT</p></button></a>
+              <a href="index.html"><button class="button nav-button nav-button-interest"><p>HOME</p></button></a>
             </div>
         </div>
     </section>
 
     <section class="interest-section">
-        <div>
-            <h1>WELCOME TO THE WORKSHOP!</h1>
-        </div>
 
-        <div class="content-container">
-            <div id="interest-content">
-                <div id="intro-flex-item-2">
-                    <h3>PALETTE SELECTOR</h3>
-                    <div class="palette-div">
-                        <img class="palette-spread" id="palette-1" src="images/palette-1.jpg">
+        <div class="interest-container">
+            <div class="interest-block">
+
+                <div class="palette-container p-1">
+                    <div class="palette-block">
+                        <img class="palette-spread" id="palette-1" onclick="changePaletteOne()" src="images/palette-1.jpg">
                     </div>
-                    <div class="palette-div">
+                    <div class="palette-block">
                         <img class="palette-spread" id="palette-2" onclick="changePaletteTwo()" src="images/palette-2.jpg">
                     </div>
-                    <div class="palette-div">
+                    <div class="palette-block">
                         <img class="palette-spread" id="palette-3" onclick="changePaletteThree()" src="images/palette-3.jpg">
                     </div>
                 </div>
-                <div class="view view-testimonial view-interest">
+
+                <div class="view view-project-card view-interest">
+                  <img src="images/web-development-copy.jpg" />
+                  <div class="project-card-mask"></div>
+                  <div class="project-card-content palette-container-test">
+                      <div class="palette-block">
+                          <img class="palette-spread" id="palette-1" onclick="changePaletteOne()" src="images/palette-1.jpg">
+                      </div>
+                      <div class="palette-block">
+                          <img class="palette-spread" id="palette-2" onclick="changePaletteTwo()" src="images/palette-2.jpg">
+                      </div>
+                      <div class="palette-block">
+                          <img class="palette-spread" id="palette-3" onclick="changePaletteThree()" src="images/palette-3.jpg">
+                      </div>
+                  </div>
+                </div>
+                
+                <div class="view view-project-card view-interest">
                     <img src="images/web-development-copy.jpg" />
-                    <div class="testimonial-mask"></div>
-                    <div class="testimonial-content">
+                    <div class="project-card-mask"></div>
+                    <div class="project-card-content">
                       <h2>API</h2>
                       <p>This project showcases an <strong>API.</strong></p>
-                      <a href="index.html" target="_blank" ><button class="button client-button" id="trents-button">VISIT</button></a>
+                      <a href="building.html"><button class="button client-button" id="trents-button">VISIT</button></a>
                     </div>
                 </div>
-                <div class="view view-testimonial view-interest">
+                <div class="view view-project-card view-interest">
                     <img src="images/web-development-copy.jpg" />
-                    <div class="testimonial-mask"></div>
-                    <div class="testimonial-content">
+                    <div class="project-card-mask"></div>
+                    <div class="project-card-content">
                       <h2>CHATBOT</h2>
                       <p>This project showcases a <strong>CHATBOT.</strong></p>
-                      <a href="index.html" target="_blank" ><button class="button client-button" id="trents-button">VISIT</button></a>
+                      <a href="building.html"><button class="button client-button" id="trents-button">VISIT</button></a>
                     </div>
                 </div>
-                <div class="view view-testimonial view-interest">
+                <div class="view view-project-card view-interest">
                     <img src="images/web-development-copy.jpg" />
-                    <div class="testimonial-mask"></div>
-                    <div class="testimonial-content">
+                    <div class="project-card-mask"></div>
+                    <div class="project-card-content">
                       <h2>FRAMEWORK</h2>
                       <p>This project showcases a <strong>REACT/VUE APP.</strong></p>
-                      <a href="index.html" target="_blank" ><button class="button client-button" id="trents-button">VISIT</button></a>
+                      <a href="building.html"><button class="button client-button" id="trents-button">VISIT</button></a>
                     </div>
                 </div>
-                <div class="view view-testimonial view-interest">
+                <div class="view view-project-card view-interest">
                     <img src="images/web-development-copy.jpg" />
-                    <div class="testimonial-mask"></div>
-                    <div class="testimonial-content">
+                    <div class="project-card-mask"></div>
+                    <div class="project-card-content">
                       <h2>BOOKING</h2>
                       <p>This project showcases a <strong>SECURE BOOKING SYSTEM.</strong></p>
-                      <a href="index.html" target="_blank" ><button class="button client-button" id="trents-button">VISIT</button></a>
+                      <a href="building.html"><button class="button client-button" id="trents-button">VISIT</button></a>
                     </div>
                 </div>
-                <div class="view view-testimonial view-interest">
+                <div class="view view-project-card view-interest">
                     <img src="images/web-development-copy.jpg" />
-                    <div class="testimonial-mask"></div>
-                    <div class="testimonial-content">
+                    <div class="project-card-mask"></div>
+                    <div class="project-card-content">
                       <h2>PAYMENT</h2>
                       <p>This project showcases a <strong>SECURE PAYMENT SYSTEM.</strong></p>
-                      <a href="index.html" target="_blank" ><button class="button client-button" id="trents-button">VISIT</button></a>
+                      <a href="building.html"><button class="button client-button" id="trents-button">VISIT</button></a>
                     </div>
                 </div>
-                <div class="view view-testimonial view-interest">
+                <div class="view view-project-card view-interest">
                     <img src="images/web-development-copy.jpg" />
-                    <div class="testimonial-mask"></div>
-                    <div class="testimonial-content">
+                    <div class="project-card-mask"></div>
+                    <div class="project-card-content">
                       <h2>BLOCKCHAIN</h2>
                       <p>This project showcases a <strong>BLOCKCHAIN APP.</strong></p>
-                      <a href="index.html" target="_blank" ><button class="button client-button" id="trents-button">VISIT</button></a>
+                      <a href="building.html"><button class="button client-button" id="trents-button">VISIT</button></a>
                     </div>
                 </div>
-                <div class="view view-testimonial view-interest">
+                <div class="view view-project-card view-interest">
                     <img src="images/web-development-copy.jpg" />
-                    <div class="testimonial-mask"></div>
-                    <div class="testimonial-content">
+                    <div class="project-card-mask"></div>
+                    <div class="project-card-content">
                       <h2>VPN</h2>
                       <p>This project showcases a <strong>VPN.</strong></p>
-                      <a href="index.html" target="_blank" ><button class="button client-button" id="trents-button">VISIT</button></a>
+                      <a href="building.html"><button class="button client-button" id="trents-button">VISIT</button></a>
                     </div>
                 </div>
             </div>
@@ -141,7 +153,7 @@
         <div class="intro-block py-5" id="intro-block-black">
             <div class="keep-calm-intro">
                 <div class="keep-calm-intro-image">
-                    <img id="keep-calm-crown-intro" src="images/keep-calm-crown.png">
+                  <a href="index.html" title="Home"><img id="keep-calm-crown-intro" src="images/keep-calm-crown.png"></a>
                 </div>
                 <div class="keep-calm-intro-text">
                     <p>KEEP</p> 
@@ -195,31 +207,6 @@
                   </a>
                 </div>
               </div>       
-            </div>
-        </div>
-    </section>
-
-    <!-- The Modal -->
-    <section id="container-modal" class="modal modal-interest">
-        <div class="modal-content modal-content-interest">
-            <div class="modal-header"> 
-                <a href="index.html">
-                    <i class="material-icons material-icons-interest">&#xe88a;</i>
-                </a>
-                <span class="modal-close modal-close-interest">&times;</span>
-            </div>
-            <div class="modal-body">
-                <div id="container-projects">
-                    <div class="nav-card-container">
-                        <a href="client.html"><button class="card" id="project-card"><img class="nav-modal-image" id="nav-modal-money" src="images/cash-money-icon.png"><h2>Client Projects</h2></button></a>
-                    </div>
-                    <div class="nav-card-container">
-                        <a href="interest.html"><button class="card" id="project-card"><img class="nav-modal-image" id="nav-modal-heart" src="images/heart-icon.png"><h2>Interest Projects</h2></button></a>
-                    </div>
-                    <div class="nav-card-container">
-                        <a href="about.html"><button class="card" id="project-card"><img class="nav-modal-image" id="nav-modal-lion" src="images/lion-eating.webp"><h2>About Me</h2></button></a>
-                    </div>           
-                </div>
             </div>
         </div>
     </section>

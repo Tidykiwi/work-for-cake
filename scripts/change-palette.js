@@ -1,4 +1,4 @@
-//const palette1 = document.getElementById('palette-1')
+const palette1 = document.getElementById('palette-1')
 const palette2 = document.getElementById('palette-2')
 const palette3 = document.getElementById('palette-3')
 const h1s = document.getElementsByTagName('h1')
