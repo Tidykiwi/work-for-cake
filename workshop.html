@@ -24,8 +24,18 @@
     <script defer src="scripts/change-palette.js" charset="utf-8"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.js"></script>
 </head>
-<body id="body-interest">
+<body id="body-workshop">
 
+  <div id="mySidenav" class="sidenav">
+    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+    <a href="client.html">Projects</a>
+    <a href="about.html">About</a>
+    <a href="index.html">Home</a> 
+</div>
+
+<span style="font-size:30px;cursor:pointer;color:white;" onclick="openNav()">&#9776;</span>
+
+  <div id="main">
     <section class="cake-section">
         <div class="intro-block py-5" id="intro-block-black">
             <div class="keep-calm-intro">
@@ -40,11 +50,6 @@
                 <p>&#x2605 &#x2605 &#x2605</p> 
                 <p>WELCOME TO THE WORKSHOP</p>
                 <p>&#x2605 &#x2605 &#x2605</p>
-            </div>
-            <div class="nav-container px-4" id="client-nav-container">
-              <a href="client.html"><button class="button nav-button nav-button-interest"><p>REALITY</p></button></a>
-              <a href="about.html"><button class="button nav-button nav-button-interest"><p>ABOUT</p></button></a>
-              <a href="index.html"><button class="button nav-button nav-button-interest"><p>HOME</p></button></a>
             </div>
         </div>
     </section>
@@ -155,14 +160,6 @@
                 <div class="keep-calm-intro-image">
                   <a href="index.html" title="Home"><img id="keep-calm-crown-intro" src="images/keep-calm-crown.png"></a>
                 </div>
-                <div class="keep-calm-intro-text">
-                    <p>KEEP</p> 
-                    <p>CALM</p>
-                    <p>AND</p>
-                    <p>WORK</p>
-                    <p>FOR</p>
-                    <p>CAKE</p>
-                </div>
             </div>
             <div id="intro-block-welcome-text">
                 <p>&#x2605 &#x2605 &#x2605</p> 
@@ -210,6 +207,20 @@
             </div>
         </div>
     </section>
+
+  </div>
+
+    <script>  
+      function openNav() {
+        document.getElementById("mySidenav").style.width = "250px";
+        document.getElementById("main").style.marginLeft = "250px";
+      }
+      
+      function closeNav() {
+        document.getElementById("mySidenav").style.width = "0";
+        document.getElementById("main").style.marginLeft = "0";
+      }
+    </script>
 
 </body>
 </html>

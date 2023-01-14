@@ -23,6 +23,16 @@
 </head>
 <body id="body-client">
 
+  <div id="mySidenav" class="sidenav">
+    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+    <a href="workshop.html">Workshop</a>
+    <a href="about.html">About</a>
+    <a href="index.html">Home</a> 
+</div>
+
+<span style="font-size:30px;cursor:pointer;color:white;" onclick="openNav()">&#9776;</span>
+
+<div id="main">
   <section class="cake-section">  
     <div class="intro-block py-5" id="intro-block-blue">
       <div class="keep-calm-intro">
@@ -30,7 +40,7 @@
           <a href="index.html" title="Home"><img id="keep-calm-crown-intro" src="images/keep-calm-crown.png"></a>
         </div>
         <div class="keep-calm-intro-text">
-          <p>ACTUAL PROJECTS</p>
+          <p>CLIENT PROJECTS</p>
         </div>
       </div>
       <div id="intro-block-welcome-text">
@@ -38,22 +48,11 @@
         <p>WORK FOR CAKE</p>
         <p>&#x2605 &#x2605 &#x2605</p>
       </div>
-      <div class="nav-container" id="client-nav-container">
-        <!-- Open the Modal -->
-        <a href="interest.html"><button class="button nav-button nav-button-client"><p>WORKSHOP</p></button></a>
-        <a href="about.html"><button class="button nav-button nav-button-client"><p>ABOUT</p></button></a>
-        <a href="index.html"><button class="button nav-button nav-button-client"><p>HOME</p></button></a>
-
-      </div>
     </div>
   </section>
 
     <section class="client-section">
       <div class="client-container">
-        <!-- <div class="client-container-text">
-          <h1>Your developer is the means by which you bring your digital ideas into being.</h1>
-          <h1>They are the means by which your vision becomes real!</h1>
-        </div> -->
         <div class="client-block">
           <div class="view view-project-card view-client">
             <img src="images/client-trents.jpg" />
@@ -100,14 +99,6 @@
         <div class="keep-calm-intro">
           <div class="keep-calm-intro-image">
             <a href="index.html" title="Home"><img id="keep-calm-crown-intro" src="images/keep-calm-crown.png"></a>
-          </div>
-          <div class="keep-calm-intro-text">
-            <p>KEEP</p> 
-            <p>CALM</p>
-            <p>AND</p>
-            <p>WORK</p>
-            <p>FOR</p>
-            <p>CAKE</p>
           </div>
         </div>
         <div id="intro-block-welcome-text">
@@ -157,6 +148,18 @@
 
       </div>
     </section>
+    </div>
+    <script>  
+      function openNav() {
+        document.getElementById("mySidenav").style.width = "250px";
+        document.getElementById("main").style.marginLeft = "250px";
+      }
+      
+      function closeNav() {
+        document.getElementById("mySidenav").style.width = "0";
+        document.getElementById("main").style.marginLeft = "0";
+      }
+    </script>
 
 </body>
 </html>
