@@ -30,10 +30,12 @@
       <a href="workshop.html">Workshop</a>
       <a href="about.html">About</a>    
   </div>
-  <span style="font-size:30px;cursor:pointer;color:white;" onclick="openNav()">&#9776;</span>
+
+  <span class="sidenav-burger" onclick="openNav()">&#9776;</span>
+  
   <section class="cake-section" id="main">
 
-    <div class="intro-block py-5 intro-block-red">
+    <div class="intro-block py-5" id="intro-block-red">
       <div class="keep-calm-intro">
           <div class="keep-calm-intro-image">
               <img id="keep-calm-crown-intro" src="images/keep-calm-crown.png">
@@ -49,11 +51,12 @@
       </div>
       <div id="intro-block-welcome-text">
           <p>&#x2605 &#x2605 &#x2605 Hello, my name is Ross &#x2605 &#x2605 &#x2605</p> 
-          <p>I am a hands-on creator and solution-seeker disguised as a full-stack web developer.</p>
+          <p>I am a hands-on creator and solution-seeker disguised as a web developer.</p>
+          <p>I can help you turn your ideas for your business or personal web-based project into reality.</p>
       </div>
       <div class="nav-container" id="client-nav-container">
         <!-- Open the Side Nav Menu --> 
-        <button class="button nav-button nav-button-home" onclick="openNav()"><p>EXPLORE</p></button>
+        <button class="button nav-button nav-button-home" onclick="document.location='client.html'">PROJECTS</button>
       </div>
     </div>
   </section>

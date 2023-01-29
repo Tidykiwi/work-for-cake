@@ -16,7 +16,9 @@
 /* Desktop to mobile landscape - Check standard sizes */
 @media screen and (max-width: 775px) {
 
-    #intro-block-blue {
+    #intro-block-red,
+    #intro-block-blue,
+    #intro-block-black {
         width: 100%;
         padding: 2rem 0 4rem 0;
     }

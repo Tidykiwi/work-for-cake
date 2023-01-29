@@ -9,6 +9,7 @@ body {
     font-family: "Lato", sans-serif;
     background-size: cover;
     overflow-x: hidden;
+    padding: 0.5rem 0 0 0.5rem;
 }
 
 #body-home,
@@ -228,6 +229,10 @@ main {
     border: solid 1px rgb(183, 11, 11);
 }
 
+.nav-button-home > a {
+    color: rgb(183, 11, 11);
+}
+
 a {
     text-decoration: none;
 }
@@ -290,13 +295,6 @@ h1 {
     gap: 30px;
 }
 
-.interest-block {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    flex-wrap: wrap;
-}
-
 #container-projects {
     display: flex;
     flex-direction: row;
@@ -315,14 +313,14 @@ h1 {
 
 /* ---------- Client Page ------------ */
 .client-section {
-    background-image: linear-gradient(to bottom right, rgb(19, 19, 197), lightblue, white);
+    background-image: linear-gradient(to bottom right, lightblue, rgb(124, 124, 239), lightblue, white);
 }
 
 .client-container {
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 4rem 3rem 5rem 3rem;
+    padding: 4rem 3rem 4rem 3rem;
 }
 
 .client-container h1 {
@@ -360,24 +358,35 @@ h1 {
 }
 
 
-/* ---------- Interest Page ------------ */
-.interest-section {
-    background-image: linear-gradient(to bottom right, rgb(19, 19, 197), lightblue, white);
+/* ---------- Workshop Page ------------ */
+.workshop-section {
+    background-image: linear-gradient(to bottom right, lightgrey, #9db4c0, lightgrey, white);
 }
 
-.interest-container {
-    background-color: #e0fbfc;
-    border-radius: 15px;
-    border: solid 10px #9db4c0;
-    padding: 2rem 2rem 2rem 2rem;
-}
-
-.palette-container {
-    border-radius: 10px;
+.workshop-container {
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-color: #9db4c0;
+    padding: 4rem 3rem 4rem 3rem;
+}
+
+.workshop-block {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 3rem;
+}
+
+.palette-container {
+    background-color: grey;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 3rem;
 }
 
 .palette-container-test {
@@ -388,7 +397,7 @@ h1 {
     justify-content: center;
 }
 
-.palette-block {
+.palette-block img {
     background-color: #fff;
     border-radius: 7.5px;
     margin: 0.3rem 0;
@@ -412,71 +421,4 @@ h1 {
 .story-section {
     height: 450px;
     background-image: linear-gradient(to bottom right, white, yellow, orange, red);
-}
-
-/* ----------- Side Nav Bar ----------- */
-
-.sidenav {
-    height: 100%;
-    width: 0;
-    position: fixed;
-    z-index: 1;
-    top: 0;
-    left: 0;
-    overflow-x: hidden;
-    transition: 0.5s;
-    padding-top: 60px;
-}
-
-.sidenav-index {
-    background-color: #8B0000;
-}
-
-.sidenav-client {
-    background-color: rgb(5, 5, 82);
-}
-  
-.sidenav-workshop {
-    background-color: black;
-}
-
-.sidenav a {
-    padding: 8px 8px 8px 32px;
-    text-decoration: none;
-    font-size: 25px;
-    color: #fff;
-    display: block;
-    transition: 0.3s;
-}
-  
-.sidenav-index a:hover {
-    color: rgb(249, 182, 182);
-}
-
-.sidenav-client a:hover {
-    color: rgb(178, 178, 248);
-}
-
-.sidenav-workshop a:hover {
-    color: #a2a5a7;
-}
-  
-.sidenav .closebtn {
-    position: absolute;
-    top: 0;
-    right: 25px;
-    font-size: 36px;
-    margin-left: 50px;
-}
-  
-#main {
-    margin-left: 0px;
-    margin-top: 0px;
-    padding: 1rem 0 1rem 0;
-    transition: all .5s;
-}
-  
-@media screen and (max-height: 450px) {
-    .sidenav {padding-top: 15px;}
-    .sidenav a {font-size: 18px;}
 }

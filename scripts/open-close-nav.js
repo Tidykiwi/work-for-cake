@@ -9,7 +9,7 @@ function openNav() {
     document.getElementById("mySidenav").style.width = "250px";
     document.getElementById("mySidenav").style.height = "100%";
     document.getElementById("mySidenav").style.paddingTop = "60px";
-    document.getElementById("main").style.marginLeft = "250px";
+    document.getElementById("main").style.marginLeft = "242px";
     
   } else if (width < 600) {
 
@@ -29,7 +29,7 @@ function closeNav() {
 
     document.getElementById("mySidenav").style.width = "0";
     document.getElementById("mySidenav").style.height = "100%";
-    document.getElementById("main").style.marginLeft = "0";
+    document.getElementById("main").style.marginLeft = "-8px";
     
   } else if (width < 600) {
 
