@@ -379,6 +379,11 @@ h1 {
     gap: 3rem;
 }
 
+.workshop-button {
+    background-color: rgb(50, 50, 50);
+    border: solid 1px rgb(18, 18, 18);
+}
+
 .palette-container {
     background-color: grey;
     width: 100%;
@@ -401,6 +406,7 @@ h1 {
     background-color: #fff;
     border-radius: 7.5px;
     margin: 0.3rem 0;
+    cursor: pointer;
 }
 
 .palette-spread {

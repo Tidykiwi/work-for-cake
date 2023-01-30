@@ -47,23 +47,16 @@
 	transition: all 0.7s ease-in-out;
 }
 
-.view .cover-text-wrapper {
-    display: flex;
-    position: absolute;
-    align-items: center;
-    justify-content: center;
-    width: 100%;
-    height: 100%;
-    transform: scaleY(1);
-	transition: all 0.7s ease-in-out;
-    z-index: 1;
-}
-
 .view .cover-text {
+    display: block;
+    position: absolute;
     width: 75%;
+    z-index: 1;
     background: rgba(0, 0, 0, 0.8);
     padding: 0rem 1rem 1rem 1rem;
     border-radius: 10px;
+    transform: scaleY(1);
+	transition: all 0.7s ease-in-out;
 }
 
 .view h2,
@@ -87,15 +80,19 @@
 }
 
 .view-project-card .cover-img,
-.view-project-card .cover-text-wrapper { 
+.view-project-card .cover-text { 
 	transform: scaleY(1);
 	transition: all .7s ease-in-out;
 }
 
 .view-project-card:hover .cover-img,
-.view-project-card:hover .cover-text-wrapper { 
+.view-project-card:hover .cover-text { 
 	transform: scale(10);
     opacity: 0;
+}	
+
+.view-project-card:hover .cover-text { 
+    z-index: 0;
 }	
 
 .view-project-card .mask { 
