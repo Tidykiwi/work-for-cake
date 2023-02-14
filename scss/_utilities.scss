@@ -52,11 +52,25 @@
     position: absolute;
     width: 75%;
     z-index: 1;
-    background: rgba(0, 0, 0, 0.8);
     padding: 0rem 1rem 1rem 1rem;
     border-radius: 10px;
     transform: scaleY(1);
 	transition: all 0.7s ease-in-out;
+}
+
+.view .cover-client {
+    background-image: radial-gradient(circle, rgba(20, 20, 126), rgba(70, 70, 201, 0.9), rgba(181, 181, 249, 0.8));
+    width: 100%;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+    bottom: 0;
+    letter-spacing: 0.15rem;
+}
+
+.view .cover-workshop {
+    background: rgba(0, 0, 0, 0.8);
+    border-top-right-radius: 0;
+    border-bottom-left-radius: 0;
 }
 
 .view h2,
@@ -142,7 +156,7 @@
     opacity: 1;
 }
 
-/* ----------- Side Nav Bar ----------- */
+/* ----------- Side Nav Bar & Menu Items ----------- */
 
 .sidenav {
     height: 100%;
@@ -168,15 +182,19 @@
     background-color: black;
 }
 
+.sidenav p {
+    padding: 1rem 0 0.5rem 0;
+}
+
 .sidenav a {
-    padding: 8px 8px 8px 32px;
+    margin-left: 32px;
     text-decoration: none;
     font-size: 25px;
     color: #fff;
-    display: block;
+    /*display: block;*/
     transition: 0.3s;
 }
-  
+
 .sidenav-index a:hover {
     color: rgb(249, 182, 182);
 }
@@ -193,7 +211,6 @@
     color: white;
     font-size: 30px;
     cursor: pointer;
-
 }
   
 .sidenav .closebtn {
@@ -210,7 +227,7 @@
     padding: 1rem 0 1rem 0;
     transition: all .5s;
 }
-  
+
 @media screen and (max-height: 450px) {
     .sidenav {padding-top: 15px;}
     .sidenav a {font-size: 18px;}
